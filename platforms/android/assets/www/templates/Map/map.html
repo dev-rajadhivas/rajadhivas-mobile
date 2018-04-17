@@ -1,0 +1,23 @@
+<ion-view view-title="แผนที่" can-swipe-back="false" class="bg-img-blur">
+    <ion-content style="background-color: #e5e5e5;bottom: 0px;" scroll="false">
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+    <ion-footer-bar style="bottom: 30px;background: rgba(250, 235, 215, 0);">
+        <button ng-click="findme();" class="button button-viriyah btn-headadd" style="bottom: 45px;">
+            <i class="fa fa-location-arrow" style="font-size: 25px;padding-top: 7px;"></i>
+        </button>
+         <button ng-click="findSchool(13.7749851, 100.5048563);" class="button button-viriyah btn-headadd">
+            <img ng-src="img/map/school.png" style="width: 38px;margin-left: -8px;">
+        </button>
+    </ion-footer-bar>
+    <style type="text/css">
+    #map {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}
+    </style>
+</ion-view>

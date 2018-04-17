@@ -1,0 +1,16 @@
+<ion-view view-title="กระดานสนทนา" can-swipe-back="false" class="bg-img-blur">
+    <ion-nav-buttons side="right">
+        <span ng-click="goto('app/board_create')">
+            <a class="button button-icon button-clear icon ion-compose nav-buttons-right vs-nav-icon"></a>
+        </span>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list">
+            <div class="item item-icon-right" ng-repeat="(key, value) in listBoard" ng-click="goto('app/board_detail')">
+                <span style="font-size: 22px;font-weight: bold;">{{value.content_title}}</span>
+                <i class="icon ion-ios-arrow-right"></i>
+                <p style="font-size: 20px;">{{ value.create_date | covertotimeThai }}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

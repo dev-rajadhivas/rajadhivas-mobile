@@ -1,0 +1,41 @@
+<ion-modal-view>
+    <ion-header-bar class="nav-bar-rajadhivas bar-calm">
+        <h1 class="title">สร้างกระดานสนทนา</h1>
+        <button class="button button-clear" ng-click="modal.hide();">
+            <i class="icon icon-cancel-circle2 vs-nav-icon"></i>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label" style="font-size: 22px;">
+                    หมวดหมู่
+                </div>
+                <select ng-model="create.content_type" style="font-size: 20px;">
+                    <option>ทักทาย</option>
+                    <option>การเรียน</option>
+                    <option>สอบถาม</option>
+                    <option>พูดคุย</option>
+                </select>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">ชื่อหัวข้อ</span>
+                <input type="text" placeholder="ระบุชื่อหัวข้อ" ng-model="create.content_title">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">รายละเอียด</span>
+                <textarea type="text" placeholder="ระบุชื่อหัวข้อ" ng-model="create.content_detail" rows="4"></textarea>
+            </label>
+            <ion-list>
+                <ion-radio style="font-size: 22px;" ng-model="create.view_type" ng-value="'ทั่วไป'">ทั่วไป</ion-radio>
+                <ion-radio style="font-size: 22px;" ng-model="create.view_type" ng-value="'เฉพาะชั้นปี'">เฉพาะชั้นปี</ion-radio>
+            </ion-list>
+            <label class="item item-input item-select" ng-if="create.view_type === 'เฉพาะชั้นปี'">
+                <div class="input-label" style="font-size: 22px;">ระดับชั้น</div>
+                <select ng-model="create.room_id" style="font-size: 20px;">
+                    <option ng-repeat="(key, value) in room">{{value.class}}</option>
+                </select>
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>

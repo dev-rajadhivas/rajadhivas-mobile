@@ -1,0 +1,25 @@
+<ion-view view-title="เปลี่ยนรหัสผ่าน" can-swipe-back="false" class="bg-img-blur">
+    <ion-content>
+        <div class="list">
+<!--         	<label class="item item-input item-stacked-label" style="background: #fff;">
+                <span class="input-label" style="font-size: 22px;">รหัสผ่านเดิม</span>
+                <input type="password" placeholder="ระบุรหัสผ่านเดิม" ng-model="change.password_current">
+            </label> -->
+        	<label class="item item-input item-stacked-label" style="background: #fff;">
+                <span class="input-label" style="font-size: 22px;">รหัสผ่านใหม่</span>
+                <input type="password" placeholder="ระบุรหัสผ่านใหม่" ng-model="change.password1">
+            </label>
+            <label class="item item-input item-stacked-label" style="background: #fff;">
+                <span class="input-label" style="font-size: 22px;">ยืนยันรหัสผ่านใหม่</span>
+                <input type="password" placeholder="ระบุยืนยันรหัสผ่านใหม่" ng-model="change.password2">
+            </label>
+            <div class="row">
+                <div class="col col-100">
+                    <button class="button button-block button-positive" ng-click="changePassword(change)" ng-disabled="!change.password1 || !change.password2">
+                        <span style="font-size: 22px;">ยืนยัน</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

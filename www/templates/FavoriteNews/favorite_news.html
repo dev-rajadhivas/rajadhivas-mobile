@@ -1,0 +1,24 @@
+<ion-view view-title="ข่าวที่ชื่นชอบ" can-swipe-back="false" class="bg-img-blur">
+    <ion-nav-buttons side="right">
+        <span ng-click="modalMultiRemoveFavorite();">
+            <a class="button button-icon button-clear icon ion-android-more-vertical nav-buttons-right vs-nav-icon" style="    padding-right: 10px;"></a>
+        </span>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="list fix-tag-list-html">
+            <div ng-if="favoriteNews.length > 0">
+                <div class="item item-thumbnail-left" ng-repeat="value in favoriteNews" style="height: 100px;" ng-click="readNews(value._id, value.news_id);">
+                    <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
+                    <h2>{{value.title}}</h2>
+                    <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
+                    <div class="date-feed" style="top: 57px;">{{ value.create_date | covertotimeThai }}</div>
+                </div>
+            </div>
+            <div class="card" ng-if="favoriteNews.length === 0">
+                <div class="item item-text-wrap">
+                    <span class="title-accident">ไม่พบข่าว</span>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

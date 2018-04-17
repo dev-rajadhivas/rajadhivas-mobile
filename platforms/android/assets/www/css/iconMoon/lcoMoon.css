@@ -1,0 +1,8078 @@
+@font-face {
+    font-family: 'IcoMoon-Ultimate';
+    src: url('../iconMoon/IcoMoon-Ultimate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon-Ultimate' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*line-height: 1;font-family: 'IcoMoon-Ultimate';*/
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e900";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home2:before {
+    content: "\e901";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home3:before {
+    content: "\e902";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home4:before {
+    content: "\e903";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home5:before {
+    content: "\e904";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home6:before {
+    content: "\e905";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home7:before {
+    content: "\e906";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home8:before {
+    content: "\e907";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-home9:before {
+    content: "\e908";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-office:before {
+    content: "\e909";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-city:before {
+    content: "\e90a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-newspaper:before {
+    content: "\e90b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-magazine:before {
+    content: "\e90c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-design:before {
+    content: "\e90d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil:before {
+    content: "\e90e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil2:before {
+    content: "\e90f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil3:before {
+    content: "\e910";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil4:before {
+    content: "\e911";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil5:before {
+    content: "\e912";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil6:before {
+    content: "\e913";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil7:before {
+    content: "\e914";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eraser:before {
+    content: "\e915";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eraser2:before {
+    content: "\e916";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eraser3:before {
+    content: "\e917";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quill:before {
+    content: "\e918";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quill2:before {
+    content: "\e919";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quill3:before {
+    content: "\e91a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quill4:before {
+    content: "\e91b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen:before {
+    content: "\e91c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen-plus:before {
+    content: "\e91d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen-minus:before {
+    content: "\e91e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen2:before {
+    content: "\e91f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen3:before {
+    content: "\e920";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen4:before {
+    content: "\e921";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen5:before {
+    content: "\e922";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-marker:before {
+    content: "\e923";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-marker2:before {
+    content: "\e924";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-blog:before {
+    content: "\e925";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-blog2:before {
+    content: "\e926";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pen6:before {
+    content: "\e927";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brush:before {
+    content: "\e928";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spray:before {
+    content: "\e929";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-palette:before {
+    content: "\e92a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-palette2:before {
+    content: "\e92b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-color-sampler:before {
+    content: "\e92c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-toggle:before {
+    content: "\e92d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bucket:before {
+    content: "\e92e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bucket2:before {
+    content: "\e92f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gradient:before {
+    content: "\e930";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eyedropper:before {
+    content: "\e931";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eyedropper2:before {
+    content: "\e932";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eyedropper3:before {
+    content: "\e933";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-droplet:before {
+    content: "\e934";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-droplet2:before {
+    content: "\e935";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-droplet-contrast:before {
+    content: "\e936";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-color-clear:before {
+    content: "\e937";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paint-format:before {
+    content: "\e938";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stamp:before {
+    content: "\e939";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-images:before {
+    content: "\e93a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image:before {
+    content: "\e93b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image2:before {
+    content: "\e93c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image-compare:before {
+    content: "\e93d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-images2:before {
+    content: "\e93e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image3:before {
+    content: "\e93f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-images3:before {
+    content: "\e940";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image4:before {
+    content: "\e941";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image5:before {
+    content: "\e942";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-image6:before {
+    content: "\e943";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-camera:before {
+    content: "\e944";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-camera2:before {
+    content: "\e945";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-camera3:before {
+    content: "\e946";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shutter:before {
+    content: "\e947";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-headphones:before {
+    content: "\e948";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-headset:before {
+    content: "\e949";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music:before {
+    content: "\e94a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music2:before {
+    content: "\e94b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music3:before {
+    content: "\e94c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music4:before {
+    content: "\e94d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music5:before {
+    content: "\e94e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-music6:before {
+    content: "\e94f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-album:before {
+    content: "\e950";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cassette:before {
+    content: "\e951";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tape:before {
+    content: "\e952";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-piano:before {
+    content: "\e953";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-guitar:before {
+    content: "\e954";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trumpet:before {
+    content: "\e955";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-speakers:before {
+    content: "\e956";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-play:before {
+    content: "\e957";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-play2:before {
+    content: "\e958";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clapboard-play:before {
+    content: "\e959";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clapboard:before {
+    content: "\e95a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-media:before {
+    content: "\e95b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-presentation:before {
+    content: "\e95c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-movie:before {
+    content: "\e95d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-film:before {
+    content: "\e95e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-film2:before {
+    content: "\e95f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-film3:before {
+    content: "\e960";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-film4:before {
+    content: "\e961";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera:before {
+    content: "\e962";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera2:before {
+    content: "\e963";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera-slash:before {
+    content: "\e964";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera3:before {
+    content: "\e965";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera4:before {
+    content: "\e966";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera-slash2:before {
+    content: "\e967";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-video-camera5:before {
+    content: "\e968";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-recording:before {
+    content: "\e969";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-dice:before {
+    content: "\e96a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gamepad:before {
+    content: "\e96b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gamepad2:before {
+    content: "\e96c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gamepad3:before {
+    content: "\e96d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pacman:before {
+    content: "\e96e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spades:before {
+    content: "\e96f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clubs:before {
+    content: "\e970";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-diamonds:before {
+    content: "\e971";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-king:before {
+    content: "\e972";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-queen:before {
+    content: "\e973";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-rook:before {
+    content: "\e974";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-bishop:before {
+    content: "\e975";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-knight:before {
+    content: "\e976";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess-pawn:before {
+    content: "\e977";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chess:before {
+    content: "\e978";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bullhorn:before {
+    content: "\e979";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-megaphone:before {
+    content: "\e97a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-new:before {
+    content: "\e97b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-connection:before {
+    content: "\e97c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-connection2:before {
+    content: "\e97d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-connection3:before {
+    content: "\e97e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-connection4:before {
+    content: "\e97f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-podcast:before {
+    content: "\e980";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-station:before {
+    content: "\e981";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-station2:before {
+    content: "\e982";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-antenna:before {
+    content: "\e983";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-satellite-dish:before {
+    content: "\e984";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-satellite-dish2:before {
+    content: "\e985";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-feed:before {
+    content: "\e986";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-podcast2:before {
+    content: "\e987";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-antenna2:before {
+    content: "\e988";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic:before {
+    content: "\e989";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic-off:before {
+    content: "\e98a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic2:before {
+    content: "\e98b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic-off2:before {
+    content: "\e98c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic3:before {
+    content: "\e98d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic4:before {
+    content: "\e98e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mic5:before {
+    content: "\e98f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-book:before {
+    content: "\e990";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-book2:before {
+    content: "\e991";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-book-play:before {
+    content: "\e992";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-book3:before {
+    content: "\e993";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bookmark:before {
+    content: "\e994";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-books:before {
+    content: "\e995";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-archive:before {
+    content: "\e996";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reading:before {
+    content: "\e997";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-library:before {
+    content: "\e998";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-library2:before {
+    content: "\e999";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-graduation:before {
+    content: "\e99a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-text:before {
+    content: "\e99b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-profile:before {
+    content: "\e99c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-empty:before {
+    content: "\e99d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-empty2:before {
+    content: "\e99e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-files-empty:before {
+    content: "\e99f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-files-empty2:before {
+    content: "\e9a0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-plus:before {
+    content: "\e9a1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-plus2:before {
+    content: "\e9a2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-minus:before {
+    content: "\e9a3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-minus2:before {
+    content: "\e9a4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-download:before {
+    content: "\e9a5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-download2:before {
+    content: "\e9a6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-upload:before {
+    content: "\e9a7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-upload2:before {
+    content: "\e9a8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-check:before {
+    content: "\e9a9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-check2:before {
+    content: "\e9aa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-eye:before {
+    content: "\e9ab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-eye2:before {
+    content: "\e9ac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-text2:before {
+    content: "\e9ad";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-text3:before {
+    content: "\e9ae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-picture:before {
+    content: "\e9af";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-picture2:before {
+    content: "\e9b0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-music:before {
+    content: "\e9b1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-music2:before {
+    content: "\e9b2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-play:before {
+    content: "\e9b3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-play2:before {
+    content: "\e9b4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-video:before {
+    content: "\e9b5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-video2:before {
+    content: "\e9b6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-copy:before {
+    content: "\e9b7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-copy2:before {
+    content: "\e9b8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-zip:before {
+    content: "\e9b9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-zip2:before {
+    content: "\e9ba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-xml:before {
+    content: "\e9bb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-xml2:before {
+    content: "\e9bc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-css:before {
+    content: "\e9bd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-css2:before {
+    content: "\e9be";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-presentation:before {
+    content: "\e9bf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-presentation2:before {
+    content: "\e9c0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-stats:before {
+    content: "\e9c1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-stats2:before {
+    content: "\e9c2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-locked:before {
+    content: "\e9c3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-locked2:before {
+    content: "\e9c4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-spreadsheet:before {
+    content: "\e9c5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-spreadsheet2:before {
+    content: "\e9c6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-copy3:before {
+    content: "\e9c7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-copy4:before {
+    content: "\e9c8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paste:before {
+    content: "\e9c9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paste2:before {
+    content: "\e9ca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paste3:before {
+    content: "\e9cb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paste4:before {
+    content: "\e9cc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack:before {
+    content: "\e9cd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack2:before {
+    content: "\e9ce";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack3:before {
+    content: "\e9cf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder:before {
+    content: "\e9d0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-search:before {
+    content: "\e9d1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-download:before {
+    content: "\e9d2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-upload:before {
+    content: "\e9d3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-plus:before {
+    content: "\e9d4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-plus2:before {
+    content: "\e9d5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-minus:before {
+    content: "\e9d6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-minus2:before {
+    content: "\e9d7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-check:before {
+    content: "\e9d8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-heart:before {
+    content: "\e9d9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-remove:before {
+    content: "\e9da";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder2:before {
+    content: "\e9db";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-open:before {
+    content: "\e9dc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder3:before {
+    content: "\e9dd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder4:before {
+    content: "\e9de";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-plus3:before {
+    content: "\e9df";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-minus3:before {
+    content: "\e9e0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-plus4:before {
+    content: "\e9e1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-minus4:before {
+    content: "\e9e2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-download2:before {
+    content: "\e9e3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-upload2:before {
+    content: "\e9e4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-download3:before {
+    content: "\e9e5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-upload3:before {
+    content: "\e9e6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder5:before {
+    content: "\e9e7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-open2:before {
+    content: "\e9e8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder6:before {
+    content: "\e9e9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-folder-open3:before {
+    content: "\e9ea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-certificate:before {
+    content: "\e9eb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cc:before {
+    content: "\e9ec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tag:before {
+    content: "\e9ed";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tag2:before {
+    content: "\e9ee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tags:before {
+    content: "\e9ef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tag3:before {
+    content: "\e9f0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tags2:before {
+    content: "\e9f1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tag4:before {
+    content: "\e9f2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tags3:before {
+    content: "\e9f3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tag5:before {
+    content: "\e9f4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-price-tags4:before {
+    content: "\e9f5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-barcode:before {
+    content: "\e9f6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-barcode2:before {
+    content: "\e9f7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-qrcode:before {
+    content: "\e9f8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ticket:before {
+    content: "\e9f9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ticket2:before {
+    content: "\e9fa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-theater:before {
+    content: "\e9fb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-store:before {
+    content: "\e9fc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-store2:before {
+    content: "\e9fd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart:before {
+    content: "\e9fe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart2:before {
+    content: "\e9ff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart3:before {
+    content: "\ea00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart4:before {
+    content: "\ea01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart5:before {
+    content: "\ea02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart-add:before {
+    content: "\ea03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart-add2:before {
+    content: "\ea04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cart-remove:before {
+    content: "\ea05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-basket:before {
+    content: "\ea06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bag:before {
+    content: "\ea07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bag2:before {
+    content: "\ea08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-percent:before {
+    content: "\ea09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coins:before {
+    content: "\ea0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coin-dollar:before {
+    content: "\ea0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coin-euro:before {
+    content: "\ea0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coin-pound:before {
+    content: "\ea0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coin-yen:before {
+    content: "\ea0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-piggy-bank:before {
+    content: "\ea0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wallet:before {
+    content: "\ea10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cash:before {
+    content: "\ea11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cash2:before {
+    content: "\ea12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cash3:before {
+    content: "\ea13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cash4:before {
+    content: "\ea14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-credit-card:before {
+    content: "\ea15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-credit-card2:before {
+    content: "\ea16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calculator:before {
+    content: "\ea17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calculator2:before {
+    content: "\ea18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calculator3:before {
+    content: "\ea19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chip:before {
+    content: "\ea1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lifebuoy:before {
+    content: "\ea1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone:before {
+    content: "\ea1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone2:before {
+    content: "\ea1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-slash:before {
+    content: "\ea1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-wave:before {
+    content: "\ea1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-plus:before {
+    content: "\ea20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-minus:before {
+    content: "\ea21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-plus2:before {
+    content: "\ea22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-minus2:before {
+    content: "\ea23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-incoming:before {
+    content: "\ea24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-outgoing:before {
+    content: "\ea25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone3:before {
+    content: "\ea26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-slash2:before {
+    content: "\ea27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-wave2:before {
+    content: "\ea28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-hang-up:before {
+    content: "\ea29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-phone-hang-up2:before {
+    content: "\ea2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-address-book:before {
+    content: "\ea2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-address-book2:before {
+    content: "\ea2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-address-book3:before {
+    content: "\ea2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-notebook:before {
+    content: "\ea2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-at-sign:before {
+    content: "\ea2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-envelop:before {
+    content: "\ea30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-envelop2:before {
+    content: "\ea31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-envelop3:before {
+    content: "\ea32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-envelop4:before {
+    content: "\ea33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-envelop5:before {
+    content: "\ea34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mailbox:before {
+    content: "\ea35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pushpin:before {
+    content: "\ea36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pushpin2:before {
+    content: "\ea37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location:before {
+    content: "\ea38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location2:before {
+    content: "\ea39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location3:before {
+    content: "\ea3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location4:before {
+    content: "\ea3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location5:before {
+    content: "\ea3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location6:before {
+    content: "\ea3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-location7:before {
+    content: "\ea3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass:before {
+    content: "\ea3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass2:before {
+    content: "\ea40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass3:before {
+    content: "\ea41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass4:before {
+    content: "\ea42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass5:before {
+    content: "\ea43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-compass6:before {
+    content: "\ea44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-map:before {
+    content: "\ea45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-map2:before {
+    content: "\ea46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-map3:before {
+    content: "\ea47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-map4:before {
+    content: "\ea48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-map5:before {
+    content: "\ea49";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-direction:before {
+    content: "\ea4a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reset:before {
+    content: "\ea4b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-history:before {
+    content: "\ea4c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clock:before {
+    content: "\ea4d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clock2:before {
+    content: "\ea4e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clock3:before {
+    content: "\ea4f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clock4:before {
+    content: "\ea50";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-watch:before {
+    content: "\ea51";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-watch2:before {
+    content: "\ea52";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-alarm:before {
+    content: "\ea53";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-alarm-add:before {
+    content: "\ea54";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-alarm-check:before {
+    content: "\ea55";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-alarm-cancel:before {
+    content: "\ea56";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell:before {
+    content: "\ea57";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell2:before {
+    content: "\ea58";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell3:before {
+    content: "\ea59";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell-plus:before {
+    content: "\ea5a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell-minus:before {
+    content: "\ea5b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell-check:before {
+    content: "\ea5c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bell-cross:before {
+    content: "\ea5d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stopwatch:before {
+    content: "\ea5e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar:before {
+    content: "\ea5f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar2:before {
+    content: "\ea60";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar3:before {
+    content: "\ea61";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar4:before {
+    content: "\ea62";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar5:before {
+    content: "\ea63";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar-empty:before {
+    content: "\ea64";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar-day:before {
+    content: "\ea65";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-calendar-week:before {
+    content: "\ea66";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-printer:before {
+    content: "\ea67";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-printer2:before {
+    content: "\ea68";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-printer3:before {
+    content: "\ea69";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-printer4:before {
+    content: "\ea6a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shredder:before {
+    content: "\ea6b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mouse:before {
+    content: "\ea6c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mouse2:before {
+    content: "\ea6d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mouse-left:before {
+    content: "\ea6e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mouse-right:before {
+    content: "\ea6f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-keyboard:before {
+    content: "\ea70";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-keyboard2:before {
+    content: "\ea71";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-typewriter:before {
+    content: "\ea72";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-display:before {
+    content: "\ea73";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-display2:before {
+    content: "\ea74";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-display3:before {
+    content: "\ea75";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-display4:before {
+    content: "\ea76";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-laptop:before {
+    content: "\ea77";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mobile:before {
+    content: "\ea78";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mobile2:before {
+    content: "\ea79";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tablet:before {
+    content: "\ea7a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mobile3:before {
+    content: "\ea7b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tv:before {
+    content: "\ea7c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-radio:before {
+    content: "\ea7d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cabinet:before {
+    content: "\ea7e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drawer:before {
+    content: "\ea7f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drawer2:before {
+    content: "\ea80";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drawer-out:before {
+    content: "\ea81";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drawer-in:before {
+    content: "\ea82";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drawer3:before {
+    content: "\ea83";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-box:before {
+    content: "\ea84";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-box-add:before {
+    content: "\ea85";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-box-remove:before {
+    content: "\ea86";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download:before {
+    content: "\ea87";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload:before {
+    content: "\ea88";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-floppy-disk:before {
+    content: "\ea89";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-floppy-disks:before {
+    content: "\ea8a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-floppy-disks2:before {
+    content: "\ea8b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-floppy-disk2:before {
+    content: "\ea8c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-floppy-disk3:before {
+    content: "\ea8d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-disk:before {
+    content: "\ea8e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-disk2:before {
+    content: "\ea8f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-usb-stick:before {
+    content: "\ea90";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drive:before {
+    content: "\ea91";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-server:before {
+    content: "\ea92";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database:before {
+    content: "\ea93";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database2:before {
+    content: "\ea94";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database3:before {
+    content: "\ea95";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database4:before {
+    content: "\ea96";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-menu:before {
+    content: "\ea97";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-add:before {
+    content: "\ea98";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-remove:before {
+    content: "\ea99";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-insert:before {
+    content: "\ea9a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-export:before {
+    content: "\ea9b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-upload:before {
+    content: "\ea9c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-refresh:before {
+    content: "\ea9d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-diff:before {
+    content: "\ea9e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-edit:before {
+    content: "\ea9f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-edit2:before {
+    content: "\eaa0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-check:before {
+    content: "\eaa1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-arrow:before {
+    content: "\eaa2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-time:before {
+    content: "\eaa3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-database-time2:before {
+    content: "\eaa4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-undo:before {
+    content: "\eaa5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-redo:before {
+    content: "\eaa6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-ccw:before {
+    content: "\eaa7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-cw:before {
+    content: "\eaa8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-ccw2:before {
+    content: "\eaa9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-cw2:before {
+    content: "\eaaa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-ccw3:before {
+    content: "\eaab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rotate-cw3:before {
+    content: "\eaac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-vertical:before {
+    content: "\eaad";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-vertical2:before {
+    content: "\eaae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-horizontal:before {
+    content: "\eaaf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-horizontal2:before {
+    content: "\eab0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-vertical3:before {
+    content: "\eab1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flip-vertical4:before {
+    content: "\eab2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-angle:before {
+    content: "\eab3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shear:before {
+    content: "\eab4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unite:before {
+    content: "\eab5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-subtract:before {
+    content: "\eab6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-interset:before {
+    content: "\eab7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-exclude:before {
+    content: "\eab8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-left:before {
+    content: "\eab9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-center-horizontal:before {
+    content: "\eaba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-right:before {
+    content: "\eabb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-top:before {
+    content: "\eabc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-center-vertical:before {
+    content: "\eabd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-align-bottom:before {
+    content: "\eabe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-undo2:before {
+    content: "\eabf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-redo2:before {
+    content: "\eac0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-forward:before {
+    content: "\eac1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reply:before {
+    content: "\eac2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reply-all:before {
+    content: "\eac3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble:before {
+    content: "\eac4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles:before {
+    content: "\eac5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles2:before {
+    content: "\eac6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble2:before {
+    content: "\eac7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles3:before {
+    content: "\eac8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles4:before {
+    content: "\eac9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-notification:before {
+    content: "\eaca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles5:before {
+    content: "\eacb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles6:before {
+    content: "\eacc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble3:before {
+    content: "\eacd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-dots:before {
+    content: "\eace";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-lines:before {
+    content: "\eacf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble4:before {
+    content: "\ead0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-dots2:before {
+    content: "\ead1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-lines2:before {
+    content: "\ead2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble5:before {
+    content: "\ead3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble6:before {
+    content: "\ead4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles7:before {
+    content: "\ead5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble7:before {
+    content: "\ead6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles8:before {
+    content: "\ead7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble8:before {
+    content: "\ead8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-dots3:before {
+    content: "\ead9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-lines3:before {
+    content: "\eada";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble9:before {
+    content: "\eadb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-dots4:before {
+    content: "\eadc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-lines4:before {
+    content: "\eadd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles9:before {
+    content: "\eade";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubbles10:before {
+    content: "\eadf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-blocked:before {
+    content: "\eae0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-quote:before {
+    content: "\eae1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-user:before {
+    content: "\eae2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-smiley:before {
+    content: "\eae3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-check:before {
+    content: "\eae4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-video:before {
+    content: "\eae5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-link:before {
+    content: "\eae6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-lock:before {
+    content: "\eae7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-star:before {
+    content: "\eae8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-heart:before {
+    content: "\eae9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-paperclip:before {
+    content: "\eaea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-cancel:before {
+    content: "\eaeb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-plus:before {
+    content: "\eaec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-minus:before {
+    content: "\eaed";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-notification2:before {
+    content: "\eaee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-left:before {
+    content: "\eaef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-right:before {
+    content: "\eaf0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-first:before {
+    content: "\eaf1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-last:before {
+    content: "\eaf2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-reply:before {
+    content: "\eaf3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-forward:before {
+    content: "\eaf4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-reply2:before {
+    content: "\eaf5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bubble-forward2:before {
+    content: "\eaf6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user:before {
+    content: "\eaf7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-users:before {
+    content: "\eaf8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-plus:before {
+    content: "\eaf9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-minus:before {
+    content: "\eafa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-cancel:before {
+    content: "\eafb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-block:before {
+    content: "\eafc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-lock:before {
+    content: "\eafd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-check:before {
+    content: "\eafe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-users2:before {
+    content: "\eaff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user2:before {
+    content: "\eb00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-users3:before {
+    content: "\eb01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-plus2:before {
+    content: "\eb02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-minus2:before {
+    content: "\eb03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-cancel2:before {
+    content: "\eb04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-block2:before {
+    content: "\eb05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-lock2:before {
+    content: "\eb06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-check2:before {
+    content: "\eb07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user3:before {
+    content: "\eb08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user4:before {
+    content: "\eb09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user5:before {
+    content: "\eb0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user6:before {
+    content: "\eb0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-users4:before {
+    content: "\eb0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user-tie:before {
+    content: "\eb0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-user7:before {
+    content: "\eb0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-users5:before {
+    content: "\eb0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-collaboration:before {
+    content: "\eb10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vcard:before {
+    content: "\eb11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hat:before {
+    content: "\eb12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bowtie:before {
+    content: "\eb13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tie:before {
+    content: "\eb14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hanger:before {
+    content: "\eb15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tshirt:before {
+    content: "\eb16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pants:before {
+    content: "\eb17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shorts:before {
+    content: "\eb18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sock:before {
+    content: "\eb19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-laundry:before {
+    content: "\eb1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quotes-left:before {
+    content: "\eb1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quotes-right:before {
+    content: "\eb1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quotes-left2:before {
+    content: "\eb1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-quotes-right2:before {
+    content: "\eb1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hour-glass:before {
+    content: "\eb1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hour-glass2:before {
+    content: "\eb20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hour-glass3:before {
+    content: "\eb21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner:before {
+    content: "\eb22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner2:before {
+    content: "\eb23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner3:before {
+    content: "\eb24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner4:before {
+    content: "\eb25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner5:before {
+    content: "\eb26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner6:before {
+    content: "\eb27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner7:before {
+    content: "\eb28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner8:before {
+    content: "\eb29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner9:before {
+    content: "\eb2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner10:before {
+    content: "\eb2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spinner11:before {
+    content: "\eb2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-microscope:before {
+    content: "\eb2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-binoculars:before {
+    content: "\eb2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-binoculars2:before {
+    content: "\eb2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search:before {
+    content: "\eb30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-in:before {
+    content: "\eb31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-out:before {
+    content: "\eb32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search2:before {
+    content: "\eb33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-in2:before {
+    content: "\eb34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-out2:before {
+    content: "\eb35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search3:before {
+    content: "\eb36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search4:before {
+    content: "\eb37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-in3:before {
+    content: "\eb38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-zoom-out3:before {
+    content: "\eb39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search5:before {
+    content: "\eb3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-search6:before {
+    content: "\eb3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge:before {
+    content: "\eb3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink:before {
+    content: "\eb3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge2:before {
+    content: "\eb3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink2:before {
+    content: "\eb3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge3:before {
+    content: "\eb40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink3:before {
+    content: "\eb41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge4:before {
+    content: "\eb42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink4:before {
+    content: "\eb43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge5:before {
+    content: "\eb44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink5:before {
+    content: "\eb45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge6:before {
+    content: "\eb46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink6:before {
+    content: "\eb47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enlarge7:before {
+    content: "\eb48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shrink7:before {
+    content: "\eb49";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key:before {
+    content: "\eb4a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key2:before {
+    content: "\eb4b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key3:before {
+    content: "\eb4c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key4:before {
+    content: "\eb4d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key5:before {
+    content: "\eb4e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-keyhole:before {
+    content: "\eb4f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lock:before {
+    content: "\eb50";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lock2:before {
+    content: "\eb51";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lock3:before {
+    content: "\eb52";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lock4:before {
+    content: "\eb53";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlocked:before {
+    content: "\eb54";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lock5:before {
+    content: "\eb55";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlocked2:before {
+    content: "\eb56";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-safe:before {
+    content: "\eb57";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wrench:before {
+    content: "\eb58";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wrench2:before {
+    content: "\eb59";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wrench3:before {
+    content: "\eb5a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-equalizer:before {
+    content: "\eb5b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-equalizer2:before {
+    content: "\eb5c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-equalizer3:before {
+    content: "\eb5d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-equalizer4:before {
+    content: "\eb5e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog:before {
+    content: "\eb5f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cogs:before {
+    content: "\eb60";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog2:before {
+    content: "\eb61";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog3:before {
+    content: "\eb62";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog4:before {
+    content: "\eb63";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog5:before {
+    content: "\eb64";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog6:before {
+    content: "\eb65";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cog7:before {
+    content: "\eb66";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-factory:before {
+    content: "\eb67";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hammer:before {
+    content: "\eb68";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hammer-wrench:before {
+    content: "\eb69";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-knife:before {
+    content: "\eb6a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-screwdriver:before {
+    content: "\eb6b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-screwdriver2:before {
+    content: "\eb6c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-magic-wand:before {
+    content: "\eb6d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-magic-wand2:before {
+    content: "\eb6e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pulse:before {
+    content: "\eb6f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pulse2:before {
+    content: "\eb70";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-aid-kit:before {
+    content: "\eb71";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-aid-kit2:before {
+    content: "\eb72";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stethoscope:before {
+    content: "\eb73";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ambulance:before {
+    content: "\eb74";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-alarm2:before {
+    content: "\eb75";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pandage:before {
+    content: "\eb76";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pandage2:before {
+    content: "\eb77";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bug:before {
+    content: "\eb78";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bug2:before {
+    content: "\eb79";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-syringe:before {
+    content: "\eb7a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-syringe2:before {
+    content: "\eb7b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pill:before {
+    content: "\eb7c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-construction:before {
+    content: "\eb7d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-traffic-cone:before {
+    content: "\eb7e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-traffic-lights:before {
+    content: "\eb7f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart:before {
+    content: "\eb80";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart2:before {
+    content: "\eb81";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart3:before {
+    content: "\eb82";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart4:before {
+    content: "\eb83";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart5:before {
+    content: "\eb84";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart6:before {
+    content: "\eb85";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart7:before {
+    content: "\eb86";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-dots:before {
+    content: "\eb87";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars:before {
+    content: "\eb88";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pie-chart8:before {
+    content: "\eb89";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars2:before {
+    content: "\eb8a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars3:before {
+    content: "\eb8b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars4:before {
+    content: "\eb8c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars5:before {
+    content: "\eb8d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-bars6:before {
+    content: "\eb8e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chart:before {
+    content: "\eb8f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-growth:before {
+    content: "\eb90";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-decline:before {
+    content: "\eb91";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-growth2:before {
+    content: "\eb92";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stats-decline2:before {
+    content: "\eb93";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stairs-up:before {
+    content: "\eb94";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stairs-down:before {
+    content: "\eb95";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stairs:before {
+    content: "\eb96";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stairs2:before {
+    content: "\eb97";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ladder:before {
+    content: "\eb98";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rating:before {
+    content: "\eb99";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rating2:before {
+    content: "\eb9a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rating3:before {
+    content: "\eb9b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cake:before {
+    content: "\eb9c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-podium:before {
+    content: "\eb9d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stars:before {
+    content: "\eb9e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal-star:before {
+    content: "\eb9f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal:before {
+    content: "\eba0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal2:before {
+    content: "\eba1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal-first:before {
+    content: "\eba2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal-second:before {
+    content: "\eba3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-medal-third:before {
+    content: "\eba4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-crown:before {
+    content: "\eba5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trophy:before {
+    content: "\eba6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trophy2:before {
+    content: "\eba7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trophy3:before {
+    content: "\eba8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-diamond:before {
+    content: "\eba9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-diamond2:before {
+    content: "\ebaa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trophy4:before {
+    content: "\ebab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gift:before {
+    content: "\ebac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gift2:before {
+    content: "\ebad";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-balloon:before {
+    content: "\ebae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pipe:before {
+    content: "\ebaf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mustache:before {
+    content: "\ebb0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mustache2:before {
+    content: "\ebb1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glass:before {
+    content: "\ebb2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glass2:before {
+    content: "\ebb3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glass3:before {
+    content: "\ebb4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glass4:before {
+    content: "\ebb5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bottle:before {
+    content: "\ebb6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bottle2:before {
+    content: "\ebb7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bottle3:before {
+    content: "\ebb8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bottle4:before {
+    content: "\ebb9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mug:before {
+    content: "\ebba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fork-knife:before {
+    content: "\ebbb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spoon-knife:before {
+    content: "\ebbc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cook:before {
+    content: "\ebbd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plate:before {
+    content: "\ebbe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-steak:before {
+    content: "\ebbf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fish:before {
+    content: "\ebc0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chicken:before {
+    content: "\ebc1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hamburger:before {
+    content: "\ebc2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pizza:before {
+    content: "\ebc3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cheese:before {
+    content: "\ebc4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bread:before {
+    content: "\ebc5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-icecream:before {
+    content: "\ebc6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-milk:before {
+    content: "\ebc7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cup:before {
+    content: "\ebc8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cup2:before {
+    content: "\ebc9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coffee-bean:before {
+    content: "\ebca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-coffee:before {
+    content: "\ebcb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-teapot:before {
+    content: "\ebcc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-leaf:before {
+    content: "\ebcd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-leaf2:before {
+    content: "\ebce";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-apple:before {
+    content: "\ebcf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grapes:before {
+    content: "\ebd0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cherry:before {
+    content: "\ebd1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree:before {
+    content: "\ebd2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree2:before {
+    content: "\ebd3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree3:before {
+    content: "\ebd4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree4:before {
+    content: "\ebd5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cactus:before {
+    content: "\ebd6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mountains:before {
+    content: "\ebd7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paw:before {
+    content: "\ebd8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-footprint:before {
+    content: "\ebd9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tent:before {
+    content: "\ebda";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flower:before {
+    content: "\ebdb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flower2:before {
+    content: "\ebdc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rocket:before {
+    content: "\ebdd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter:before {
+    content: "\ebde";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter2:before {
+    content: "\ebdf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter-slow:before {
+    content: "\ebe0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter-medium:before {
+    content: "\ebe1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter-fast:before {
+    content: "\ebe2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-meter3:before {
+    content: "\ebe3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hammer2:before {
+    content: "\ebe4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-balance:before {
+    content: "\ebe5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-scale:before {
+    content: "\ebe6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bomb:before {
+    content: "\ebe7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fire:before {
+    content: "\ebe8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fire2:before {
+    content: "\ebe9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lab:before {
+    content: "\ebea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-atom:before {
+    content: "\ebeb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-atom2:before {
+    content: "\ebec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-magnet:before {
+    content: "\ebed";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-magnet2:before {
+    content: "\ebee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-dumbbell:before {
+    content: "\ebef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-skull:before {
+    content: "\ebf0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-skull2:before {
+    content: "\ebf1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp:before {
+    content: "\ebf2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp2:before {
+    content: "\ebf3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp3:before {
+    content: "\ebf4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spotlight:before {
+    content: "\ebf5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp4:before {
+    content: "\ebf6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp5:before {
+    content: "\ebf7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp6:before {
+    content: "\ebf8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp7:before {
+    content: "\ebf9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lamp8:before {
+    content: "\ebfa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-broom:before {
+    content: "\ebfb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-toiletpaper:before {
+    content: "\ebfc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bin:before {
+    content: "\ebfd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bin2:before {
+    content: "\ebfe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bin3:before {
+    content: "\ebff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bin4:before {
+    content: "\ec00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bin5:before {
+    content: "\ec01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-briefcase:before {
+    content: "\ec02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-briefcase2:before {
+    content: "\ec03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-briefcase3:before {
+    content: "\ec04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-airplane:before {
+    content: "\ec05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-airplane2:before {
+    content: "\ec06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-airplane3:before {
+    content: "\ec07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-airplane4:before {
+    content: "\ec08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paperplane:before {
+    content: "\ec09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-car:before {
+    content: "\ec0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-steering-wheel:before {
+    content: "\ec0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-car2:before {
+    content: "\ec0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gas:before {
+    content: "\ec0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bus:before {
+    content: "\ec0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-truck:before {
+    content: "\ec0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bike:before {
+    content: "\ec10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-road:before {
+    content: "\ec11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-train:before {
+    content: "\ec12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-train2:before {
+    content: "\ec13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ship:before {
+    content: "\ec14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-boat:before {
+    content: "\ec15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chopper:before {
+    content: "\ec16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chopper2:before {
+    content: "\ec17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cube:before {
+    content: "\ec18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cube2:before {
+    content: "\ec19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cube3:before {
+    content: "\ec1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cube4:before {
+    content: "\ec1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pyramid:before {
+    content: "\ec1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pyramid2:before {
+    content: "\ec1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-package:before {
+    content: "\ec1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-puzzle:before {
+    content: "\ec1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-puzzle2:before {
+    content: "\ec20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-puzzle3:before {
+    content: "\ec21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-puzzle4:before {
+    content: "\ec22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glasses-3d:before {
+    content: "\ec23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glasses-3d2:before {
+    content: "\ec24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glasses:before {
+    content: "\ec25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-glasses2:before {
+    content: "\ec26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brain:before {
+    content: "\ec27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-accessibility:before {
+    content: "\ec28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-accessibility2:before {
+    content: "\ec29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-strategy:before {
+    content: "\ec2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-target:before {
+    content: "\ec2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-target2:before {
+    content: "\ec2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-target3:before {
+    content: "\ec2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ammo:before {
+    content: "\ec2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gun:before {
+    content: "\ec2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-gun-forbidden:before {
+    content: "\ec30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield:before {
+    content: "\ec31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield-check:before {
+    content: "\ec32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield-notice:before {
+    content: "\ec33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield2:before {
+    content: "\ec34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield3:before {
+    content: "\ec35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shield4:before {
+    content: "\ec36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-soccer:before {
+    content: "\ec37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-football:before {
+    content: "\ec38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-archery:before {
+    content: "\ec39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bow:before {
+    content: "\ec3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sword:before {
+    content: "\ec3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tennis:before {
+    content: "\ec3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pingpong:before {
+    content: "\ec3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-baseball:before {
+    content: "\ec3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-basketball:before {
+    content: "\ec3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-golf:before {
+    content: "\ec40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-golf2:before {
+    content: "\ec41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hockey:before {
+    content: "\ec42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-racing:before {
+    content: "\ec43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-finish:before {
+    content: "\ec44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eight-ball:before {
+    content: "\ec45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bowling:before {
+    content: "\ec46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bowling2:before {
+    content: "\ec47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-power:before {
+    content: "\ec48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-power2:before {
+    content: "\ec49";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-power3:before {
+    content: "\ec4a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-switch:before {
+    content: "\ec4b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-switch2:before {
+    content: "\ec4c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-power-cord:before {
+    content: "\ec4d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-power-cord2:before {
+    content: "\ec4e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-outlet:before {
+    content: "\ec4f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard:before {
+    content: "\ec50";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard2:before {
+    content: "\ec51";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard3:before {
+    content: "\ec52";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard4:before {
+    content: "\ec53";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard5:before {
+    content: "\ec54";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clipboard6:before {
+    content: "\ec55";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-playlist:before {
+    content: "\ec56";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-playlist-add:before {
+    content: "\ec57";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-list-numbered:before {
+    content: "\ec58";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-list:before {
+    content: "\ec59";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-list2:before {
+    content: "\ec5a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-more:before {
+    content: "\ec5b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-more2:before {
+    content: "\ec5c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid:before {
+    content: "\ec5d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid2:before {
+    content: "\ec5e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid3:before {
+    content: "\ec5f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid4:before {
+    content: "\ec60";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid5:before {
+    content: "\ec61";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid6:before {
+    content: "\ec62";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grid7:before {
+    content: "\ec63";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree5:before {
+    content: "\ec64";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree6:before {
+    content: "\ec65";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tree7:before {
+    content: "\ec66";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lan:before {
+    content: "\ec67";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lan2:before {
+    content: "\ec68";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lan3:before {
+    content: "\ec69";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu:before {
+    content: "\ec6a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-small:before {
+    content: "\ec6b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu2:before {
+    content: "\ec6c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu3:before {
+    content: "\ec6d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu4:before {
+    content: "\ec6e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu5:before {
+    content: "\ec6f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu6:before {
+    content: "\ec70";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu7:before {
+    content: "\ec71";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu8:before {
+    content: "\ec72";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu9:before {
+    content: "\ec73";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu10:before {
+    content: "\ec74";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud:before {
+    content: "\ec75";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-download:before {
+    content: "\ec76";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-upload:before {
+    content: "\ec77";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-check:before {
+    content: "\ec78";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud2:before {
+    content: "\ec79";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-download2:before {
+    content: "\ec7a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-upload2:before {
+    content: "\ec7b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cloud-check2:before {
+    content: "\ec7c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download2:before {
+    content: "\ec7d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download3:before {
+    content: "\ec7e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload2:before {
+    content: "\ec7f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload3:before {
+    content: "\ec80";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-import:before {
+    content: "\ec81";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-import2:before {
+    content: "\ec82";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download4:before {
+    content: "\ec83";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload4:before {
+    content: "\ec84";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download5:before {
+    content: "\ec85";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload5:before {
+    content: "\ec86";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download6:before {
+    content: "\ec87";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload6:before {
+    content: "\ec88";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download7:before {
+    content: "\ec89";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload7:before {
+    content: "\ec8a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download8:before {
+    content: "\ec8b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload8:before {
+    content: "\ec8c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download9:before {
+    content: "\ec8d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload9:before {
+    content: "\ec8e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-download10:before {
+    content: "\ec8f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-upload10:before {
+    content: "\ec90";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sphere:before {
+    content: "\ec91";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sphere2:before {
+    content: "\ec92";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sphere3:before {
+    content: "\ec93";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-planet:before {
+    content: "\ec94";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-planet2:before {
+    content: "\ec95";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-earth:before {
+    content: "\ec96";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-earth2:before {
+    content: "\ec97";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-earth3:before {
+    content: "\ec98";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-link:before {
+    content: "\ec99";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlink:before {
+    content: "\ec9a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-link2:before {
+    content: "\ec9b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlink2:before {
+    content: "\ec9c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-link3:before {
+    content: "\ec9d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlink3:before {
+    content: "\ec9e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-link4:before {
+    content: "\ec9f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlink4:before {
+    content: "\eca0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-link5:before {
+    content: "\eca1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unlink5:before {
+    content: "\eca2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-anchor:before {
+    content: "\eca3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag:before {
+    content: "\eca4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag2:before {
+    content: "\eca5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag3:before {
+    content: "\eca6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag4:before {
+    content: "\eca7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag5:before {
+    content: "\eca8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag6:before {
+    content: "\eca9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag7:before {
+    content: "\ecaa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flag8:before {
+    content: "\ecab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-attachment:before {
+    content: "\ecac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-attachment2:before {
+    content: "\ecad";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye:before {
+    content: "\ecae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye-plus:before {
+    content: "\ecaf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye-minus:before {
+    content: "\ecb0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye-blocked:before {
+    content: "\ecb1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye2:before {
+    content: "\ecb2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye-blocked2:before {
+    content: "\ecb3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye3:before {
+    content: "\ecb4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye-blocked3:before {
+    content: "\ecb5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eye4:before {
+    content: "\ecb6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bookmark2:before {
+    content: "\ecb7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bookmark3:before {
+    content: "\ecb8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bookmarks:before {
+    content: "\ecb9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bookmark4:before {
+    content: "\ecba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spotlight2:before {
+    content: "\ecbb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-starburst:before {
+    content: "\ecbc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-snowflake:before {
+    content: "\ecbd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-temperature:before {
+    content: "\ecbe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-temperature2:before {
+    content: "\ecbf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-lightning:before {
+    content: "\ecc0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-lightning2:before {
+    content: "\ecc1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-rain:before {
+    content: "\ecc2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-rain2:before {
+    content: "\ecc3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-snow:before {
+    content: "\ecc4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-snow2:before {
+    content: "\ecc5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloud-wind:before {
+    content: "\ecc6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloud-wind2:before {
+    content: "\ecc7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloud-sun:before {
+    content: "\ecc8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloud-sun2:before {
+    content: "\ecc9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloudy:before {
+    content: "\ecca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-cloudy2:before {
+    content: "\eccb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-sun-wind:before {
+    content: "\eccc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-sun-wind2:before {
+    content: "\eccd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sun:before {
+    content: "\ecce";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sun2:before {
+    content: "\eccf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-moon:before {
+    content: "\ecd0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-day-night:before {
+    content: "\ecd1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-day-night2:before {
+    content: "\ecd2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-weather-windy:before {
+    content: "\ecd3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fan:before {
+    content: "\ecd4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-umbrella:before {
+    content: "\ecd5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sun3:before {
+    content: "\ecd6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-contrast:before {
+    content: "\ecd7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brightness-contrast:before {
+    content: "\ecd8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brightness-high:before {
+    content: "\ecd9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brightness-medium:before {
+    content: "\ecda";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-brightness-low:before {
+    content: "\ecdb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bed:before {
+    content: "\ecdc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bed2:before {
+    content: "\ecdd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-furniture:before {
+    content: "\ecde";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chair:before {
+    content: "\ecdf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-empty:before {
+    content: "\ece0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-empty2:before {
+    content: "\ece1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-full:before {
+    content: "\ece2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-empty3:before {
+    content: "\ece3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-half:before {
+    content: "\ece4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star-full2:before {
+    content: "\ece5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-star:before {
+    content: "\ece6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart:before {
+    content: "\ece7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart2:before {
+    content: "\ece8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart3:before {
+    content: "\ece9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart4:before {
+    content: "\ecea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart-broken:before {
+    content: "\eceb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart5:before {
+    content: "\ecec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart6:before {
+    content: "\eced";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart-broken2:before {
+    content: "\ecee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart7:before {
+    content: "\ecef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart8:before {
+    content: "\ecf0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-heart-broken3:before {
+    content: "\ecf1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lips:before {
+    content: "\ecf2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lips2:before {
+    content: "\ecf3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-up:before {
+    content: "\ecf4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-up2:before {
+    content: "\ecf5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-down:before {
+    content: "\ecf6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-down2:before {
+    content: "\ecf7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-up3:before {
+    content: "\ecf8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-thumbs-down3:before {
+    content: "\ecf9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-height:before {
+    content: "\ecfa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-man:before {
+    content: "\ecfb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-woman:before {
+    content: "\ecfc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-man-woman:before {
+    content: "\ecfd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-male:before {
+    content: "\ecfe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-female:before {
+    content: "\ecff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-peace:before {
+    content: "\ed00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-yin-yang:before {
+    content: "\ed01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-happy:before {
+    content: "\ed02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-happy2:before {
+    content: "\ed03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-smile:before {
+    content: "\ed04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-smile2:before {
+    content: "\ed05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tongue:before {
+    content: "\ed06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tongue2:before {
+    content: "\ed07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sad:before {
+    content: "\ed08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sad2:before {
+    content: "\ed09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wink:before {
+    content: "\ed0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wink2:before {
+    content: "\ed0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grin:before {
+    content: "\ed0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grin2:before {
+    content: "\ed0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cool:before {
+    content: "\ed0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cool2:before {
+    content: "\ed0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-angry:before {
+    content: "\ed10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-angry2:before {
+    content: "\ed11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-evil:before {
+    content: "\ed12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-evil2:before {
+    content: "\ed13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shocked:before {
+    content: "\ed14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shocked2:before {
+    content: "\ed15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-baffled:before {
+    content: "\ed16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-baffled2:before {
+    content: "\ed17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-confused:before {
+    content: "\ed18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-confused2:before {
+    content: "\ed19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-neutral:before {
+    content: "\ed1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-neutral2:before {
+    content: "\ed1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hipster:before {
+    content: "\ed1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hipster2:before {
+    content: "\ed1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wondering:before {
+    content: "\ed1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wondering2:before {
+    content: "\ed1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sleepy:before {
+    content: "\ed20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sleepy2:before {
+    content: "\ed21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-frustrated:before {
+    content: "\ed22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-frustrated2:before {
+    content: "\ed23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-crying:before {
+    content: "\ed24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-crying2:before {
+    content: "\ed25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cursor:before {
+    content: "\ed26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cursor2:before {
+    content: "\ed27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lasso:before {
+    content: "\ed28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lasso2:before {
+    content: "\ed29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-select:before {
+    content: "\ed2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-select2:before {
+    content: "\ed2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-point-up:before {
+    content: "\ed2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-point-right:before {
+    content: "\ed2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-point-down:before {
+    content: "\ed2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-point-left:before {
+    content: "\ed2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pointer:before {
+    content: "\ed30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reminder:before {
+    content: "\ed31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drag-left-right:before {
+    content: "\ed32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drag-left:before {
+    content: "\ed33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-drag-right:before {
+    content: "\ed34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-touch:before {
+    content: "\ed35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-multitouch:before {
+    content: "\ed36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-touch-zoom:before {
+    content: "\ed37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-touch-pinch:before {
+    content: "\ed38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hand:before {
+    content: "\ed39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-grab:before {
+    content: "\ed3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-empty:before {
+    content: "\ed3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-plus:before {
+    content: "\ed3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-minus:before {
+    content: "\ed3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-star:before {
+    content: "\ed3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-picture:before {
+    content: "\ed3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-down:before {
+    content: "\ed40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-up:before {
+    content: "\ed41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-cancel:before {
+    content: "\ed42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-check:before {
+    content: "\ed43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-text:before {
+    content: "\ed44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-clubs:before {
+    content: "\ed45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-spades:before {
+    content: "\ed46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-hearts:before {
+    content: "\ed47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-diamonds:before {
+    content: "\ed48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-user:before {
+    content: "\ed49";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack4:before {
+    content: "\ed4a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-music:before {
+    content: "\ed4b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stack-play:before {
+    content: "\ed4c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-move:before {
+    content: "\ed4d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-dots:before {
+    content: "\ed4e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-warning:before {
+    content: "\ed4f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-warning2:before {
+    content: "\ed50";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-notification:before {
+    content: "\ed51";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-notification2:before {
+    content: "\ed52";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question:before {
+    content: "\ed53";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question2:before {
+    content: "\ed54";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question3:before {
+    content: "\ed55";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question4:before {
+    content: "\ed56";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question5:before {
+    content: "\ed57";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-question6:before {
+    content: "\ed58";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plus:before {
+    content: "\ed59";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-minus:before {
+    content: "\ed5a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plus2:before {
+    content: "\ed5b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-minus2:before {
+    content: "\ed5c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plus3:before {
+    content: "\ed5d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-minus3:before {
+    content: "\ed5e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plus-circle:before {
+    content: "\ed5f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-minus-circle:before {
+    content: "\ed60";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-plus-circle2:before {
+    content: "\ed61";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-minus-circle2:before {
+    content: "\ed62";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-info:before {
+    content: "\ed63";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-info2:before {
+    content: "\ed64";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cancel-circle:before {
+    content: "\ed65";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cancel-circle2:before {
+    content: "\ed66";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-blocked:before {
+    content: "\ed67";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cancel-square:before {
+    content: "\ed68";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cancel-square2:before {
+    content: "\ed69";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cancel:before {
+    content: "\ed6a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spam:before {
+    content: "\ed6b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cross:before {
+    content: "\ed6c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cross2:before {
+    content: "\ed6d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-cross3:before {
+    content: "\ed6e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark:before {
+    content: "\ed6f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark2:before {
+    content: "\ed70";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark3:before {
+    content: "\ed71";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark4:before {
+    content: "\ed72";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark5:before {
+    content: "\ed73";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spell-check:before {
+    content: "\ed74";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spell-check2:before {
+    content: "\ed75";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter:before {
+    content: "\ed76";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-exit:before {
+    content: "\ed77";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter2:before {
+    content: "\ed78";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-exit2:before {
+    content: "\ed79";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter3:before {
+    content: "\ed7a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-exit3:before {
+    content: "\ed7b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wall:before {
+    content: "\ed7c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-fence:before {
+    content: "\ed7d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-play3:before {
+    content: "\ed7e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pause:before {
+    content: "\ed7f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stop:before {
+    content: "\ed80";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-previous:before {
+    content: "\ed81";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-next:before {
+    content: "\ed82";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-backward:before {
+    content: "\ed83";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-forward2:before {
+    content: "\ed84";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-play4:before {
+    content: "\ed85";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pause2:before {
+    content: "\ed86";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stop2:before {
+    content: "\ed87";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-backward2:before {
+    content: "\ed88";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-forward3:before {
+    content: "\ed89";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-first:before {
+    content: "\ed8a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-last:before {
+    content: "\ed8b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-previous2:before {
+    content: "\ed8c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-next2:before {
+    content: "\ed8d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-eject:before {
+    content: "\ed8e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-high:before {
+    content: "\ed8f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-medium:before {
+    content: "\ed90";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-low:before {
+    content: "\ed91";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-mute:before {
+    content: "\ed92";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-speaker-left:before {
+    content: "\ed93";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-speaker-right:before {
+    content: "\ed94";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-mute2:before {
+    content: "\ed95";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-increase:before {
+    content: "\ed96";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-decrease:before {
+    content: "\ed97";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-high2:before {
+    content: "\ed98";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-medium2:before {
+    content: "\ed99";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-medium3:before {
+    content: "\ed9a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-low2:before {
+    content: "\ed9b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-mute3:before {
+    content: "\ed9c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-increase2:before {
+    content: "\ed9d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-decrease2:before {
+    content: "\ed9e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-decrease3:before {
+    content: "\ed9f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-5:before {
+    content: "\eda0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-4:before {
+    content: "\eda1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-3:before {
+    content: "\eda2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-2:before {
+    content: "\eda3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-1:before {
+    content: "\eda4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-0:before {
+    content: "\eda5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-mute4:before {
+    content: "\eda6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-volume-mute5:before {
+    content: "\eda7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-loop:before {
+    content: "\eda8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-loop2:before {
+    content: "\eda9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-loop3:before {
+    content: "\edaa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-infinite-square:before {
+    content: "\edab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-infinite:before {
+    content: "\edac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-infinite2:before {
+    content: "\edad";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-loop4:before {
+    content: "\edae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shuffle:before {
+    content: "\edaf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shuffle2:before {
+    content: "\edb0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wave:before {
+    content: "\edb1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wave2:before {
+    content: "\edb2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-split:before {
+    content: "\edb3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-merge:before {
+    content: "\edb4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-first2:before {
+    content: "\edb5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-last2:before {
+    content: "\edb6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up:before {
+    content: "\edb7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up2:before {
+    content: "\edb8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up3:before {
+    content: "\edb9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up4:before {
+    content: "\edba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right:before {
+    content: "\edbb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right2:before {
+    content: "\edbc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right3:before {
+    content: "\edbd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right4:before {
+    content: "\edbe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down:before {
+    content: "\edbf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down2:before {
+    content: "\edc0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down3:before {
+    content: "\edc1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down4:before {
+    content: "\edc2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left:before {
+    content: "\edc3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left2:before {
+    content: "\edc4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left3:before {
+    content: "\edc5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left4:before {
+    content: "\edc6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up5:before {
+    content: "\edc7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right5:before {
+    content: "\edc8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down5:before {
+    content: "\edc9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left5:before {
+    content: "\edca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-left:before {
+    content: "\edcb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up6:before {
+    content: "\edcc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-right:before {
+    content: "\edcd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right6:before {
+    content: "\edce";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-right:before {
+    content: "\edcf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down6:before {
+    content: "\edd0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-left:before {
+    content: "\edd1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left6:before {
+    content: "\edd2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-left2:before {
+    content: "\edd3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up7:before {
+    content: "\edd4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-right2:before {
+    content: "\edd5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right7:before {
+    content: "\edd6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-right2:before {
+    content: "\edd7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down7:before {
+    content: "\edd8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-left2:before {
+    content: "\edd9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left7:before {
+    content: "\edda";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-left3:before {
+    content: "\eddb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up8:before {
+    content: "\eddc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-right3:before {
+    content: "\eddd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right8:before {
+    content: "\edde";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-right3:before {
+    content: "\eddf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down8:before {
+    content: "\ede0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-left3:before {
+    content: "\ede1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left8:before {
+    content: "\ede2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up:before {
+    content: "\ede3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right:before {
+    content: "\ede4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down:before {
+    content: "\ede5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left:before {
+    content: "\ede6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up2:before {
+    content: "\ede7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right2:before {
+    content: "\ede8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down2:before {
+    content: "\ede9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left2:before {
+    content: "\edea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up-left:before {
+    content: "\edeb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up3:before {
+    content: "\edec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up-right:before {
+    content: "\eded";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right3:before {
+    content: "\edee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down-right:before {
+    content: "\edef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down3:before {
+    content: "\edf0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down-left:before {
+    content: "\edf1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left3:before {
+    content: "\edf2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up-left2:before {
+    content: "\edf3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up4:before {
+    content: "\edf4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up-right2:before {
+    content: "\edf5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right4:before {
+    content: "\edf6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down-right2:before {
+    content: "\edf7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down4:before {
+    content: "\edf8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down-left2:before {
+    content: "\edf9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left4:before {
+    content: "\edfa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize:before {
+    content: "\edfb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize2:before {
+    content: "\edfc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize3:before {
+    content: "\edfd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize4:before {
+    content: "\edfe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize5:before {
+    content: "\edff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize6:before {
+    content: "\ee00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize7:before {
+    content: "\ee01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-resize8:before {
+    content: "\ee02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-up-left:before {
+    content: "\ee03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-up:before {
+    content: "\ee04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-up-right:before {
+    content: "\ee05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-right:before {
+    content: "\ee06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-down-right:before {
+    content: "\ee07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-down:before {
+    content: "\ee08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-down-left:before {
+    content: "\ee09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square-left:before {
+    content: "\ee0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up9:before {
+    content: "\ee0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right9:before {
+    content: "\ee0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down9:before {
+    content: "\ee0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left9:before {
+    content: "\ee0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up10:before {
+    content: "\ee0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right10:before {
+    content: "\ee10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down10:before {
+    content: "\ee11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left10:before {
+    content: "\ee12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-left4:before {
+    content: "\ee13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up11:before {
+    content: "\ee14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-right4:before {
+    content: "\ee15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right11:before {
+    content: "\ee16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-right4:before {
+    content: "\ee17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down11:before {
+    content: "\ee18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-left4:before {
+    content: "\ee19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left11:before {
+    content: "\ee1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-left5:before {
+    content: "\ee1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up12:before {
+    content: "\ee1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up-right5:before {
+    content: "\ee1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right12:before {
+    content: "\ee1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-right5:before {
+    content: "\ee1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down12:before {
+    content: "\ee20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down-left5:before {
+    content: "\ee21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left12:before {
+    content: "\ee22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up13:before {
+    content: "\ee23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right13:before {
+    content: "\ee24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down13:before {
+    content: "\ee25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left13:before {
+    content: "\ee26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up14:before {
+    content: "\ee27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right14:before {
+    content: "\ee28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down14:before {
+    content: "\ee29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left14:before {
+    content: "\ee2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up5:before {
+    content: "\ee2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right5:before {
+    content: "\ee2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down5:before {
+    content: "\ee2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left5:before {
+    content: "\ee2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-up6:before {
+    content: "\ee2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-right6:before {
+    content: "\ee30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-down6:before {
+    content: "\ee31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-left6:before {
+    content: "\ee32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up15:before {
+    content: "\ee33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right15:before {
+    content: "\ee34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down15:before {
+    content: "\ee35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left15:before {
+    content: "\ee36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-up16:before {
+    content: "\ee37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-right16:before {
+    content: "\ee38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-down16:before {
+    content: "\ee39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-arrow-left16:before {
+    content: "\ee3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu-open:before {
+    content: "\ee3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu-open2:before {
+    content: "\ee3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu-close:before {
+    content: "\ee3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-menu-close2:before {
+    content: "\ee3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter4:before {
+    content: "\ee3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter5:before {
+    content: "\ee40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-esc:before {
+    content: "\ee41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-enter6:before {
+    content: "\ee42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-backspace:before {
+    content: "\ee43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-backspace2:before {
+    content: "\ee44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tab:before {
+    content: "\ee45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-transmission:before {
+    content: "\ee46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-transmission2:before {
+    content: "\ee47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort:before {
+    content: "\ee48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort2:before {
+    content: "\ee49";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-move-up:before {
+    content: "\ee4a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-move-down:before {
+    content: "\ee4b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-alpha-asc:before {
+    content: "\ee4c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-alpha-desc:before {
+    content: "\ee4d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-numeric-asc:before {
+    content: "\ee4e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-numberic-desc:before {
+    content: "\ee4f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-amount-asc:before {
+    content: "\ee50";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-amount-desc:before {
+    content: "\ee51";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-time-asc:before {
+    content: "\ee52";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sort-time-desc:before {
+    content: "\ee53";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-6:before {
+    content: "\ee54";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-5:before {
+    content: "\ee55";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-4:before {
+    content: "\ee56";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-3:before {
+    content: "\ee57";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-2:before {
+    content: "\ee58";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-1:before {
+    content: "\ee59";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-0:before {
+    content: "\ee5a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-battery-charging:before {
+    content: "\ee5b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-keyboard:before {
+    content: "\ee5c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-A:before {
+    content: "\ee5d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-up:before {
+    content: "\ee5e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-right:before {
+    content: "\ee5f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-down:before {
+    content: "\ee60";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-key-left:before {
+    content: "\ee61";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-command:before {
+    content: "\ee62";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-shift:before {
+    content: "\ee63";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ctrl:before {
+    content: "\ee64";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-opt:before {
+    content: "\ee65";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-checked:before {
+    content: "\ee66";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-unchecked:before {
+    content: "\ee67";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-partial:before {
+    content: "\ee68";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-square:before {
+    content: "\ee69";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-triangle:before {
+    content: "\ee6a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-triangle2:before {
+    content: "\ee6b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-diamond3:before {
+    content: "\ee6c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-diamond4:before {
+    content: "\ee6d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-checked2:before {
+    content: "\ee6e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-unchecked2:before {
+    content: "\ee6f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkbox-partial2:before {
+    content: "\ee70";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-radio-checked:before {
+    content: "\ee71";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-radio-checked2:before {
+    content: "\ee72";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-radio-unchecked:before {
+    content: "\ee73";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-toggle-on:before {
+    content: "\ee74";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-toggle-off:before {
+    content: "\ee75";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-checkmark-circle:before {
+    content: "\ee76";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle:before {
+    content: "\ee77";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle2:before {
+    content: "\ee78";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circles:before {
+    content: "\ee79";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circles2:before {
+    content: "\ee7a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-crop:before {
+    content: "\ee7b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-crop2:before {
+    content: "\ee7c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-make-group:before {
+    content: "\ee7d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ungroup:before {
+    content: "\ee7e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vector:before {
+    content: "\ee7f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vector2:before {
+    content: "\ee80";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rulers:before {
+    content: "\ee81";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ruler:before {
+    content: "\ee82";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pencil-ruler:before {
+    content: "\ee83";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-scissors:before {
+    content: "\ee84";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-scissors2:before {
+    content: "\ee85";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-scissors3:before {
+    content: "\ee86";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-haircut:before {
+    content: "\ee87";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-comb:before {
+    content: "\ee88";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-filter:before {
+    content: "\ee89";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-filter2:before {
+    content: "\ee8a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-filter3:before {
+    content: "\ee8b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-filter4:before {
+    content: "\ee8c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-font:before {
+    content: "\ee8d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ampersand:before {
+    content: "\ee8e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ligature:before {
+    content: "\ee8f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ligature2:before {
+    content: "\ee90";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-font-size:before {
+    content: "\ee91";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-typography:before {
+    content: "\ee92";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-text-height:before {
+    content: "\ee93";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-text-width:before {
+    content: "\ee94";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-height2:before {
+    content: "\ee95";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-width:before {
+    content: "\ee96";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bold:before {
+    content: "\ee97";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-underline:before {
+    content: "\ee98";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-italic:before {
+    content: "\ee99";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-strikethrough:before {
+    content: "\ee9a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-strikethrough2:before {
+    content: "\ee9b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-font-size2:before {
+    content: "\ee9c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-bold2:before {
+    content: "\ee9d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-underline2:before {
+    content: "\ee9e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-italic2:before {
+    content: "\ee9f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-strikethrough3:before {
+    content: "\eea0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-omega:before {
+    content: "\eea1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sigma:before {
+    content: "\eea2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-nbsp:before {
+    content: "\eea3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-page-break:before {
+    content: "\eea4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-page-break2:before {
+    content: "\eea5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-superscript:before {
+    content: "\eea6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-subscript:before {
+    content: "\eea7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-superscript2:before {
+    content: "\eea8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-subscript2:before {
+    content: "\eea9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-text-color:before {
+    content: "\eeaa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-highlight:before {
+    content: "\eeab";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pagebreak:before {
+    content: "\eeac";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-clear-formatting:before {
+    content: "\eead";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-table:before {
+    content: "\eeae";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-table2:before {
+    content: "\eeaf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-insert-template:before {
+    content: "\eeb0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pilcrow:before {
+    content: "\eeb1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ltr:before {
+    content: "\eeb2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rtl:before {
+    content: "\eeb3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ltr2:before {
+    content: "\eeb4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rtl2:before {
+    content: "\eeb5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-section:before {
+    content: "\eeb6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-left:before {
+    content: "\eeb7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-center:before {
+    content: "\eeb8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-right:before {
+    content: "\eeb9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-justify:before {
+    content: "\eeba";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-left2:before {
+    content: "\eebb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-center2:before {
+    content: "\eebc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-right2:before {
+    content: "\eebd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-justify2:before {
+    content: "\eebe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-indent-increase:before {
+    content: "\eebf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-indent-decrease:before {
+    content: "\eec0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-left3:before {
+    content: "\eec1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-center3:before {
+    content: "\eec2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-right3:before {
+    content: "\eec3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paragraph-justify3:before {
+    content: "\eec4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-indent-increase2:before {
+    content: "\eec5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-indent-decrease2:before {
+    content: "\eec6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-share:before {
+    content: "\eec7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-share2:before {
+    content: "\eec8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-new-tab:before {
+    content: "\eec9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-new-tab2:before {
+    content: "\eeca";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-popout:before {
+    content: "\eecb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-embed:before {
+    content: "\eecc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-embed2:before {
+    content: "\eecd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-markup:before {
+    content: "\eece";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-regexp:before {
+    content: "\eecf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-regexp2:before {
+    content: "\eed0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-code:before {
+    content: "\eed1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-css:before {
+    content: "\eed2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-circle-code:before {
+    content: "\eed3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-terminal:before {
+    content: "\eed4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-unicode:before {
+    content: "\eed5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-0:before {
+    content: "\eed6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-1:before {
+    content: "\eed7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-2:before {
+    content: "\eed8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-3:before {
+    content: "\eed9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-4:before {
+    content: "\eeda";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-5:before {
+    content: "\eedb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-6:before {
+    content: "\eedc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-7:before {
+    content: "\eedd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-8:before {
+    content: "\eede";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-seven-segment-9:before {
+    content: "\eedf";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-share3:before {
+    content: "\eee0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-share4:before {
+    content: "\eee1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mail:before {
+    content: "\eee2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mail2:before {
+    content: "\eee3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mail3:before {
+    content: "\eee4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-mail4:before {
+    content: "\eee5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-amazon:before {
+    content: "\eee6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google:before {
+    content: "\eee7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google2:before {
+    content: "\eee8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google3:before {
+    content: "\eee9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google-plus:before {
+    content: "\eeea";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google-plus2:before {
+    content: "\eeeb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google-plus3:before {
+    content: "\eeec";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hangouts:before {
+    content: "\eeed";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-google-drive:before {
+    content: "\eeee";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-facebook:before {
+    content: "\eeef";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-facebook2:before {
+    content: "\eef0";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-instagram:before {
+    content: "\eef1";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-whatsapp:before {
+    content: "\eef2";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-spotify:before {
+    content: "\eef3";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-telegram:before {
+    content: "\eef4";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-twitter:before {
+    content: "\eef5";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vine:before {
+    content: "\eef6";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vk:before {
+    content: "\eef7";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-renren:before {
+    content: "\eef8";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-sina-weibo:before {
+    content: "\eef9";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rss:before {
+    content: "\eefa";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-rss2:before {
+    content: "\eefb";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-youtube:before {
+    content: "\eefc";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-youtube2:before {
+    content: "\eefd";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-twitch:before {
+    content: "\eefe";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vimeo:before {
+    content: "\eeff";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-vimeo2:before {
+    content: "\ef00";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lanyrd:before {
+    content: "\ef01";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flickr:before {
+    content: "\ef02";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flickr2:before {
+    content: "\ef03";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flickr3:before {
+    content: "\ef04";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flickr4:before {
+    content: "\ef05";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-dribbble:before {
+    content: "\ef06";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-behance:before {
+    content: "\ef07";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-behance2:before {
+    content: "\ef08";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-deviantart:before {
+    content: "\ef09";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-500px:before {
+    content: "\ef0a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-steam:before {
+    content: "\ef0b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-steam2:before {
+    content: "\ef0c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-dropbox:before {
+    content: "\ef0d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-onedrive:before {
+    content: "\ef0e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-github:before {
+    content: "\ef0f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-npm:before {
+    content: "\ef10";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-basecamp:before {
+    content: "\ef11";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-trello:before {
+    content: "\ef12";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wordpress:before {
+    content: "\ef13";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-joomla:before {
+    content: "\ef14";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-ello:before {
+    content: "\ef15";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-blogger:before {
+    content: "\ef16";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-blogger2:before {
+    content: "\ef17";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tumblr:before {
+    content: "\ef18";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tumblr2:before {
+    content: "\ef19";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-yahoo:before {
+    content: "\ef1a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-yahoo2:before {
+    content: "\ef1b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-tux:before {
+    content: "\ef1c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-appleinc:before {
+    content: "\ef1d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-finder:before {
+    content: "\ef1e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-android:before {
+    content: "\ef1f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-windows:before {
+    content: "\ef20";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-windows8:before {
+    content: "\ef21";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-soundcloud:before {
+    content: "\ef22";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-soundcloud2:before {
+    content: "\ef23";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-skype:before {
+    content: "\ef24";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-reddit:before {
+    content: "\ef25";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-hackernews:before {
+    content: "\ef26";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-wikipedia:before {
+    content: "\ef27";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-linkedin:before {
+    content: "\ef28";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-linkedin2:before {
+    content: "\ef29";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lastfm:before {
+    content: "\ef2a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-lastfm2:before {
+    content: "\ef2b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-delicious:before {
+    content: "\ef2c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stumbleupon:before {
+    content: "\ef2d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stumbleupon2:before {
+    content: "\ef2e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-stackoverflow:before {
+    content: "\ef2f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pinterest:before {
+    content: "\ef30";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-pinterest2:before {
+    content: "\ef31";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-xing:before {
+    content: "\ef32";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-xing2:before {
+    content: "\ef33";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-flattr:before {
+    content: "\ef34";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-foursquare:before {
+    content: "\ef35";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-yelp:before {
+    content: "\ef36";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-paypal:before {
+    content: "\ef37";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-chrome:before {
+    content: "\ef38";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-firefox:before {
+    content: "\ef39";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-IE:before {
+    content: "\ef3a";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-edge:before {
+    content: "\ef3b";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-safari:before {
+    content: "\ef3c";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-opera:before {
+    content: "\ef3d";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-pdf:before {
+    content: "\ef3e";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-openoffice:before {
+    content: "\ef3f";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-word:before {
+    content: "\ef40";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-file-excel:before {
+    content: "\ef41";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-libreoffice:before {
+    content: "\ef42";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-html-five:before {
+    content: "\ef43";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-html-five2:before {
+    content: "\ef44";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-css3:before {
+    content: "\ef45";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-git:before {
+    content: "\ef46";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-codepen:before {
+    content: "\ef47";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-svg:before {
+    content: "\ef48";
+    font-family: 'IcoMoon-Ultimate';
+}
+
+.icon-IcoMoon:before {
+    content: "\ef49";
+    font-family: 'IcoMoon-Ultimate';
+}

@@ -1,0 +1,23 @@
+<ion-modal-view>
+    <ion-header-bar class="nav-bar-rajadhivas bar-calm">
+        <h1 class="title">ลืมรหัสผ่าน</h1>
+        <button class="button button-clear" ng-click="regisModal.hide();">
+            <i class="icon icon-cancel-circle2 vs-nav-icon"></i>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">ระบุเมลที่ใช้สมัคร</span>
+                <input type="text" placeholder="email" ng-model="repassword.email">
+            </label>
+            <div class="row">
+                <div class="col col-100">
+                    <button class="button button-block button-positive" ng-click="forgetPassword(repassword)" ng-disabled="!repassword.email">
+                        <span style="font-size: 22px;">ยืนยัน</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

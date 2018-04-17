@@ -1,0 +1,15 @@
+<ion-modal-view>
+    <ion-header-bar class="nav-bar-rajadhivas bar-calm">
+        <h1 class="title">ข่าวด่วน</h1>
+        <button class="button button-clear" ng-click="hotnewsModal.hide();">
+            <i class="icon icon-cancel-circle2 vs-nav-icon"></i>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="item item-body fix-tag-html" ng-repeat="value in hotnews | orderBy:'-create_date' | limitTo:1">
+            <img class="full-image" ng-src="{{server_url}}{{value.path}}">
+            <h2 style="font-size: 22px;text-align: center;">{{value.title}}</h2>
+            <p ng-bind-html="value.content"></p>
+        </div>
+    </ion-content>
+</ion-modal-view>

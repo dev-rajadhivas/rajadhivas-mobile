@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Thai Sans Neue Regular";
+    src: url('../fontThaiSansNeue/ThaiSansNeue-Regular.ttf') format('truetype');
+    line-height: 1;
+}
+
+@font-face {
+    font-family: "Thai Sans Neue Bold";
+    src: url('../fontThaiSansNeue/ThaiSansNeue-Bold.ttf') format('truetype');
+    line-height: 1;
+}
+
+@font-face {
+    font-family: "Thai Sans Neue Italic";
+    src: url('../fontThaiSansNeue/ThaiSansNeue-Italic.ttf') format('truetype');
+    line-height: 1;
+}
+
+.regular-font {
+    font-family: 'Thai Sans Neue regular' !important;
+}
+
+.bold-font {
+    font-family: 'Thai Sans Neue Bold' !important;
+}
+
+.italic-font {
+    font-family: 'Thai Sans Neue Italic' !important;
+}

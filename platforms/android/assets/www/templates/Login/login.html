@@ -1,0 +1,93 @@
+<ion-view hide-nav-bar="true" view-title="Login" can-swipe-back="false">
+    <ion-content class="login_body">
+        <form ng-submit="doLogin(input)" class="Login-form">
+            <div class="row">
+                <div class="col-offset-10 col col-80 col-offset-10">
+                    <img ng-src="img/login/icon.png" class="responsive" />
+                    <p style="color:#ffffff;font-size: 25px;">RAJADHIVAS NEWS</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-offset-10 col col-80 col-offset-10">
+                    <label class="item item-input radius_top">
+                        <i class="ion-person" style="margin-right: 10px;position: relative;top: -1px;color: #666;"></i>
+                        <input ng-change="toLowerCase(input.username)" type="text" ng-model="input.username" placeholder="ชื่อผู้ใช้" required>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-offset-10 col col-80 col-offset-10">
+                    <label class="item item-input radius_bottom">
+                        <i class="ion-android-lock" style="margin-right: 10px;position: relative;top: -1px;color: #666;"></i>
+                        <input type="password" ng-model="input.password" placeholder="รหัสผ่าน" required>
+                    </label>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col col-33">
+                    <button class="button button-block icon-left ion-star button-positive">Favorites</button>
+                </div>
+                <div class="col col-33">
+                    <button class="button button-block icon-left ion-star button-positive">Favorites</button>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-offset-10 col col-80 col-offset-10">
+                    <input type="submit" class="button button-block button-positive" ng-disabled="!input.username || !input.password" value="เข้าสู่ระบบ" />
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;font-size: 20px;">
+                <!-- <div class="col-offset-10 col col-80 col-offset-10">
+                    <p style="color: #fff;">สมัครสมาชิก</p>
+                </div> -->
+                <div class="col col-50" ng-click="openmodalRegister('modal-register');">
+                    <p style="color: #fff;">สมัครสมาชิก</p>
+                </div>
+                <div class="col col-50" ng-click="openmodalRegister('modal-resetpass');">
+                    <p style="color: #fff;">ลืมรหัสผ่าน</p>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+    <style type="text/css">
+    .login_body {
+        background: url("img/login/background.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .Login-form {
+        width: 100%;
+        position: relative;
+        top: 15%;
+        text-align: center;
+    }
+
+    .Login-form .responsive {
+        width: 50%;
+        height: auto;
+    }
+
+    .Login-form .radius_top {
+        border-color: #eee;
+        position: relative;
+        margin-bottom: -9px;
+        -webkit-border-radius: 4px 4px 0px 0px;
+        -moz-border-radius: 4px 4px 0px 0px;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .Login-form .radius_bottom {
+        border-color: #eee;
+        -webkit-border-radius: 0px 0px 4px 4px;
+        -moz-border-radius: 0px 0px 4px 4px;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .Login-form label i input {
+        display: inline-block;
+    }
+    </style>
+</ion-view>

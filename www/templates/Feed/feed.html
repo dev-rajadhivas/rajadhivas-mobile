@@ -1,0 +1,210 @@
+<ion-view view-title="{{titile}}" can-swipe-back="false" class="bg-img-blur" style="overflow: hidden;">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear icon icon-menu7 vs-nav-icon" menu-toggle="left"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <span ng-click="goto('/app/feed_unread')">
+            <a class="button button-icon button-clear icon ion-ios-bell nav-buttons-right vs-nav-icon"></a>
+            <span class="badge badge-assertive" style="position: absolute;left: -5px;" ng-if="unRead.length > 0">{{unRead.length}}</span>
+        </span>
+    </ion-nav-buttons>
+    <ion-header-bar class="bar-subheader subheader-menu-vs nav-subheader">
+        <div class="row">
+            <div class="col col-33" ng-click="click(0);">
+                <i class="icon ion-android-bookmark" ng-class="{'select-box-active': slidefeed === 0}">
+                    <p>ประชาสัมพันธ์</p>
+                </i>
+            </div>
+            <div class="col col-33" ng-click="click(1);">
+                <i class="icon ion-speakerphone" ng-class="{'select-box-active': slidefeed === 1}">
+                    <p>ประกาศ</p>
+                </i>
+            </div>
+            <div class="col col-33" ng-click="click(2);">
+                <i class="icon ion-pricetags" ng-class="{'select-box-active': slidefeed === 2}">
+                    <p>กิจกรรม</p>
+                </i>
+            </div>
+        </div>
+    </ion-header-bar>
+    <ion-content scroll="false">
+        <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
+        <div style="height: 35%;" ng-if="loadingShow">
+            <ion-slide-box ng-if="slidefeed === 0" show-pager="false" does-continue="true" auto-play="true">
+                <ion-slide ng-repeat="value in feedPage1">
+                    <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
+                    <div class="slidenews">
+                        <p class="topic-feed">{{value.title}} </p>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+            <ion-slide-box ng-if="slidefeed === 1" show-pager="false" does-continue="true" auto-play="true">
+                <ion-slide ng-repeat="value in feedPage2">
+                    <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
+                    <div class="slidenews">
+                        <p class="topic-feed">{{value.title}} </p>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+            <ion-slide-box ng-if="slidefeed === 2" show-pager="false" does-continue="true" auto-play="true">
+                <ion-slide ng-repeat="value in feedPage3">
+                    <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
+                    <div class="slidenews">
+                        <p class="topic-feed">{{value.title}} </p>
+                    </div>
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+        <ion-slide-box delegate-handle="modalhandle" on-slide-changed="slide($index);" show-pager="false" style="height: 65%" ng-if="loadingShow">
+            <ion-slide>
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                    	<i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage1" placeholder="ค้นหา">
+                    </label>
+                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
+                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                </div>
+                <ion-scroll class="scroll">
+                    <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
+                    </ion-refresher>
+                    <div ng-if="feedPage1.length > 0">
+                        <div class="list fix-tag-list-html">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage1 | filterBy: ['title','content']: searchPage1" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                                <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
+                                <h2>{{value.title}}</h2>
+                                <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
+                                <div class="date-feed">{{ value.create_date | covertotimeThai }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" ng-if="feedPage1.length === 0">
+                        <div class="item item-text-wrap">
+                            <span class="title-accident">ไม่พบข่าว</span>
+                        </div>
+                    </div>
+                    <div style="height: 48px;"></div>
+                </ion-scroll>
+            </ion-slide>
+            <ion-slide>
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                    	<i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage2" placeholder="ค้นหา">
+                    </label>
+                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
+                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                </div>
+                <ion-scroll class="scroll">
+                    <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
+                    </ion-refresher>
+                    <div ng-if="feedPage2.length > 0">
+                        <div class="list fix-tag-list-html">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage2 | filterBy: ['title','content']: searchPage2" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                                <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
+                                <h2>{{value.title}}</h2>
+                                <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
+                                <span class="date-feed">{{ value.create_date | covertotimeThai }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" ng-if="feedPage2.length === 0">
+                        <div class="item item-text-wrap">
+                            <span class="title-accident">ไม่พบข่าว</span>
+                        </div>
+                    </div>
+                    <div style="height: 48px;"></div>
+                </ion-scroll>
+            </ion-slide>
+            <ion-slide>
+                <div class="item item-input-inset">
+                    <label class="item-input-wrapper">
+                    	<i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage3" placeholder="ค้นหา">
+                    </label>
+                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
+                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                </div>
+                <ion-scroll class="scroll">
+                    <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
+                    </ion-refresher>
+                    <div ng-if="feedPage3.length > 0">
+                        <div class="list fix-tag-list-html">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage3 | filterBy: ['title','content']: searchPage3" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                                <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
+                                <h2>{{value.title}}</h2>
+                                <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
+                                <span class="date-feed">{{ value.create_date | covertotimeThai }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" ng-if="feedPage3.length === 0">
+                        <div class="item item-text-wrap">
+                            <span class="title-accident">ไม่พบข่าว</span>
+                        </div>
+                    </div>
+                    <div style="height: 48px;"></div>
+                </ion-scroll>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+    <style type="text/css">
+    .topic-feed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .select-page-active {
+        color: deeppink !important;
+    }
+
+    .select-page {
+        position: relative;
+        top: -12px!important;
+    }
+
+    .select-box {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .select-box-active {
+        color: #7ed4ec;
+    }
+
+    .slide-news {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+        padding-top: 0px;
+        line-height: 1;
+    }
+
+    .slidenews {
+        color: #fafafa;
+        bottom: 10px !important;
+        position: absolute;
+        margin-bottom: -15px;
+        font-size: 20px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.36) 0%, #0B0B0B 100%);
+        padding: 12px;
+        line-height: 15px;
+        width: 100%;
+    }
+
+    .padding-0 {
+        padding: 0px;
+    }
+
+    .topic_box_second_topic {
+        color: #fff !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0px;
+        text-align: left;
+        font-size: 18px;
+    }
+    </style>
+</ion-view>

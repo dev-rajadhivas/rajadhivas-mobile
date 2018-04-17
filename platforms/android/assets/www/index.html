@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title></title>
+
+        <link rel="manifest" href="manifest.json">
+
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/font/fonts.css" rel="stylesheet">
+        <link href="css/fontThaiSansNeue/fonts.css" rel="stylesheet">
+        <link href="css/slidingTabs.css" rel="stylesheet">
+        <link href="css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="css/iconMoon/lcoMoon.css" rel="stylesheet">
+        <link href="css/animated-modal.css" rel="stylesheet">
+        <link href="css/angular-datepicker.css" rel="stylesheet">
+
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script> 
+        <!-- google maps javascript -->
+        <!-- <script src="http://maps.google.com/maps/api/js"></script> -->
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyA4HbLRjJIEklAzEkiG1a91WRStu-toj0Y&sensor=true"></script>
+
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+        <script src="cordova.js"></script>
+        <script data-require="angular.js@1.4.1" data-semver="1.4.1" src="https://code.angularjs.org/1.4.1/angular.js"></script>
+        <script data-require="angular-filter@0.5.2" data-semver="0.5.2" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.2/angular-filter.js"></script>
+
+        <!-- your app's js -->
+        <script src="js/app.js"></script>
+
+        <!-- lib Folder -->
+        <script src="lib/angular-filter.js"></script>
+        <script src="lib/ionic-datepicker.bundle.min.js"></script>
+        <script src="lib/angular-summernote.js"></script>
+
+        <!-- service Folder -->
+        <script src="js/services/route.js"></script>
+        <script src="js/services/restapi.js"></script>
+        <script src="js/services/variable.js"></script>
+        <script src="js/services/filter.js"></script>
+        <script src="js/services/function.js"></script>
+        <script src="js/services/startup.js"></script>
+        <script src="js/services/service-datepicker.js"></script>
+        <script src="js/services/notification.js"></script>
+
+        <!-- controllers Folder --> 
+        <script src="js/controllers/AppCtrl.js"></script>
+        <script src="js/controllers/LoginCtrl.js"></script>
+        <script src="js/controllers/FeedCtrl.js"></script>
+        <script src="js/controllers/FeedUnreadCtrl.js"></script>
+        <script src="js/controllers/MapCtrl.js"></script>
+        <script src="js/controllers/SearchCtrl.js"></script>
+        <script src="js/controllers/ContactCtrl.js"></script>
+        <script src="js/controllers/FavoriteNewsCtrl.js"></script>
+        <script src="js/controllers/BoardCtrl.js"></script>
+        <script src="js/controllers/BoardDetailCtrl.js"></script>
+        <script src="js/controllers/BoardCreateCtrl.js"></script>
+        <script src="js/controllers/SettingCtrl.js"></script>
+
+    </head>
+    <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+    <ion-nav-view></ion-nav-view>
+</body>
+</html>

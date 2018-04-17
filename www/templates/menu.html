@@ -1,0 +1,100 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-bar-rajadhivas-transparent">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear icon icon-menu7 vs-nav-icon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-content delegate-handle="menuScroll">
+            <div class="list" style="margin-bottom: 0px;padding-top: 0;px">
+                <div class="item item-avatar bg-profile-sidemenu">
+                    <!-- <img ng-src="img/login/icon.png"> -->
+                    <h2 style="font-size: 25px;position: absolute;top: 5px;color: #ef3a9e;font-weight: bold;text-shadow: 1px 1px #000;">{{session.fullname}}</h2>
+                    <p style="position: absolute;font-size: 18px;bottom: 16px;color: #fff;text-shadow: 1px 1px #000;">{{session.level}}</p>
+                </div>
+            </div>
+            <!-- <div class="list" style="margin-bottom: 0px;">
+                <div class="item" style="height: 70px;max-height: 70px;">
+                    <h2 style="font-size: 30px;color: #444;font-weight: bold;bottom: 15px;position: relative;">333</h2>
+                    <p>rr</p>
+                </div>
+            </div> -->
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/feed" menu-close>
+                    <i class="icon ion-android-document"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>ข่าวสาร</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/favorite_news" menu-close>
+                    <i class="icon ion-android-star"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>ข่าวที่ชื่นชอบ</span>
+                    </label>
+                </a>
+            </ion-list>
+            <!-- <ion-list class="box-sidemenu-custom">
+                <a href="#/app/hot_news" menu-close>
+                    <i class="icon ion-fireball"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>ข่าวด่วน</span>
+                    </label>
+                </a>
+            </ion-list> -->
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/search" menu-close>
+                    <i class="icon ion-android-search"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>ค้นหา</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/board" menu-close>
+                    <i class="icon ion-compose"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>กระดานสนทนา</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/map" menu-close>
+                    <i class="icon ion-android-map"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>แผนที่</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/contact" menu-close>
+                    <i class="icon ion-android-clipboard"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>เกี่ยวกับโรงเรียน</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom">
+                <a href="#/app/setting" menu-close>
+                    <i class="icon ion-unlocked"></i>
+                    <label class="item vs-sidemenu-label">
+                        <span>เปลี่ยนรหัสผ่าน</span>
+                    </label>
+                </a>
+            </ion-list>
+            <ion-list class="box-sidemenu-custom" ng-click="logout();" menu-close>
+                <i class="icon ion-android-exit"></i>
+                <label class="item vs-sidemenu-label">
+                    <span>ออกจากระบบ</span>
+                </label>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

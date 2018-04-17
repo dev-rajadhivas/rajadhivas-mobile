@@ -1,0 +1,87 @@
+<ion-modal-view>
+    <ion-header-bar class="nav-bar-rajadhivas bar-calm">
+        <h1 class="title">สมัครสมาชิก</h1>
+        <button class="button button-clear" ng-click="regisModal.hide();">
+            <i class="icon icon-cancel-circle2 vs-nav-icon"></i>
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <div class="row" style="padding: 0px;">
+                <div class="col col-50" style="padding: 0px;">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label" style="font-size: 22px;">ชื่อ
+                            <span ng-show="!register.firstname" class="input-errorrequired"> *</span>
+                        </span>
+                        <input type="text" placeholder="ระบุชื่อ" ng-model="register.firstname">
+                    </label>
+                </div>
+                <div class="col col-50" style="padding: 0px;">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label" style="font-size: 22px;">นามสกุล
+                            <span ng-show="!register.lastname" class="input-errorrequired"> *</span>
+                        </span>
+                        <input type="text" placeholder="ระบุนามสกุล" ng-model="register.lastname">
+                    </label>
+                </div>
+            </div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">เบอร์โทร</span>
+                <input type="tel" placeholder="ระบุเบอร์โทร" ng-model="register.tel">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">e-mail
+                    <span ng-show="!register.email" class="input-errorrequired"> *</span>
+                </span>
+                <input type="email" placeholder="mail@mail.com" ng-model="register.email">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label" style="font-size: 22px;">
+                    ประเภทผู้ใช้ <span ng-show="!register.level" class="input-errorrequired"> *</span>
+                </div>
+                <select ng-model="register.level" style="font-size: 20px;">
+                    <option>อาจารย์</option>
+                    <option>นักเรียน</option>
+                    <option>ผู้ปกครอง</option>
+                    <option>บุคคลทั่วไป</option>
+                </select>
+            </label>
+            <label class="item item-input item-select" ng-if="register.level === 'นักเรียน'">
+                <div class="input-label" style="font-size: 22px;">
+                    ระดับชั้น <span ng-show="!register.room_student" class="input-errorrequired"> *</span>
+                </div>
+                <select ng-model="register.room_student" style="font-size: 20px;">
+                    <option ng-repeat="(key, value) in room">{{value.class}}</option>
+                </select>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">ชื่อผู้ใช้
+                    <span ng-show="!register.username" class="input-errorrequired"> *</span>
+                </span>
+                <input type="text" placeholder="username" ng-model="register.username" ng-change="toLowerCaseRegis(register.username)">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">รหัสผ่าน
+                    <span ng-show="!register.password1" class="input-errorrequired"> *</span>
+                </span>
+                <input type="password" placeholder="password" ng-model="register.password1">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">ยืนยันรหัสผ่าน
+                    <span ng-show="!register.password2" class="input-errorrequired"> *</span>
+                </span>
+                <input type="password" placeholder="confirm password" ng-model="register.password2">
+            </label>
+            <div class="row">
+                <div class="col col-100">
+                    <button class="button button-block button-positive" ng-click="regis(register)" ng-disabled="!register.firstname || !register.lastname || !register.level || !register.username || !register.password1 || !register.password2 || !register.email" ng-if="register.level !== 'นักเรียน'">
+                        <span style="font-size: 22px;">ยืนยัน</span>
+                    </button>
+                    <button class="button button-block button-positive" ng-click="regis(register)" ng-disabled="!register.firstname || !register.lastname || !register.level || !register.username || !register.password1 || !register.password2 || !register.email || !register.room_student" ng-if="register.level === 'นักเรียน'">
+                        <span style="font-size: 22px;">ยืนยัน</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,51 @@
+<ion-view view-title="สร้างกระดานสนทนา" can-swipe-back="false" class="bg-img-blur">
+    <ion-content style="background: #fff;">
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label" style="font-size: 22px;">
+                    หมวดหมู่ <span ng-show="!create.content_type" class="input-errorrequired"> *</span>
+                </div>
+                <select ng-model="create.content_type" style="font-size: 20px;">
+                    <option>ทักทาย</option>
+                    <option>การเรียน</option>
+                    <option>สอบถาม</option>
+                    <option>พูดคุย</option>
+                </select>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">
+                    ชื่อหัวข้อ <span ng-show="!create.content_title" class="input-errorrequired"> *</span>
+                </span>
+                <input type="text" placeholder="ระบุชื่อหัวข้อ" ng-model="create.content_title">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label" style="font-size: 22px;">
+                    รายละเอียด <span ng-show="!create.content_detail" class="input-errorrequired"> *</span>
+                </span>
+                <textarea type="text" placeholder="ระบุชื่อหัวข้อ" ng-model="create.content_detail" rows="4"></textarea>
+            </label>
+            <ion-list>
+                <ion-radio style="font-size: 22px;" ng-model="create.view_type" ng-value="'ทั่วไป'">ทั่วไป</ion-radio>
+                <ion-radio style="font-size: 22px;" ng-model="create.view_type" ng-value="'เฉพาะชั้นปี'">เฉพาะชั้นปี</ion-radio>
+            </ion-list>
+            <label class="item item-input item-select" ng-if="create.view_type === 'เฉพาะชั้นปี'">
+                <div class="input-label" style="font-size: 22px;">
+                    ระดับชั้น <span ng-show="!create.room_student" class="input-errorrequired"> *</span>
+                </div>
+                <select ng-model="create.room_student" style="font-size: 20px;">
+                    <option ng-repeat="(key, value) in room">{{value.class}}</option>
+                </select>
+            </label>
+            <div class="row">
+                <div class="col col-100">
+                    <button class="button button-block button-positive" ng-click="createBoard(create);" ng-disabled="!create.content_type || !create.content_title || !create.content_detail || !create.room_student" ng-if="create.view_type !== 'ทั่วไป'">
+                        <span style="font-size: 22px;">สร้าง</span>
+                    </button>
+                    <button class="button button-block button-positive" ng-click="createBoard(create);" ng-disabled="!create.content_type || !create.content_title || !create.content_detail" ng-if="create.view_type === 'ทั่วไป'">
+                        <span style="font-size: 22px;">สร้าง</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
