@@ -6,10 +6,14 @@
     </ion-nav-buttons>
     <ion-content>
         <div class="list">
-            <div class="item item-icon-right" ng-repeat="(key, value) in listBoard" ng-click="goto('app/board_detail')">
+            <div class="item item-icon-right" ng-repeat="(key, value) in listBoard" ng-click="gotoBoard(value)">
                 <span style="font-size: 22px;font-weight: bold;">{{value.content_title}}</span>
                 <i class="icon ion-ios-arrow-right"></i>
-                <p style="font-size: 20px;">{{ value.create_date | covertotimeThai }}</p>
+                <p style="font-size: 20px;">
+                    <span> อ่าน {{value.content_read}}</span>
+                    <span> ตอบ {{value.content_answer}}</span>
+                </p>
+                <p style="font-size: 20px;text-align: right;">{{ value.create_date | covertotimeThai }}</p>
             </div>
         </div>
     </ion-content>

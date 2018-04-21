@@ -24,6 +24,7 @@ app.controller('BoardCreateCtrl', function(Fn, RestAPI, variable, $rootScope, $f
         data.room_id = room_student_id.length > 0 ? room_student_id[0].id : null;
         data.active_permission = true;
         data.create_by = variable.getSession().user_id;
+        data.create_by_name = variable.getSession().firstname + " " + variable.getSession().lastname;
         data.room_student = data.room_student ? data.room_student : null;
         RestAPI.createBoards(data).success(function(results, status, headers, config) {
             if (results.status === true) {

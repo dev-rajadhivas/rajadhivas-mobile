@@ -47,7 +47,7 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $h
             }
         })
         .state('app.board-detail', {
-            url: '/board_detail',
+            url: '/board_detail/:board_id',
             views: {
                 'menuContent': {
                     templateUrl: 'templates/Board/board-detail.html',

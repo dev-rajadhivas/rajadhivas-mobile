@@ -29,26 +29,26 @@ app.factory('variable', function($filter, $window) {
             $window.localStorage["session"] = data;
         },
         getSession: function() {
-            return $window.localStorage["session"] ? JSON.parse($window.localStorage["session"]) : '';
-            // return {
-            //     "firstname": "ทดสอบ",
-            //     "lastname": "ลืมรหัส",
-            //     "tel": "999",
-            //     "email": "rmutpcpe123@gmail.com",
-            //     "level": "นักเรียน",
-            //     "room_student": "ม.6/2",
-            //     "username": "plakk",
-            //     "latitude": 13.8352587,
-            //     "longitude": 100.49971,
-            //     "devicetoken": "fhsVJ5utJfY:APA91bExZr7ZmvVeXYKOIfgFpvMS1hivH3hcelYKE2tzuy9R1SnDtQ34PvgNNm_lS42UdBw6ppZ9zFJfnoKZMvbz_er78G9kU5MVBdUpLQfCne6Mlkb8dc-VM0IxP9-dFVw4a7SOJG49",
-            //     "news_id": [],
-            //     "favorite_news_id": [],
-            //     "user_id": 16,
-            //     "active": true,
-            //     "userrole": 4,
-            //     "fullname": "คุณทดสอบ ลืมรหัส",
-            //     "_id": "peEidash6TywSKDFS"
-            // }
+            // return $window.localStorage["session"] ? JSON.parse($window.localStorage["session"]) : '';
+            return {
+                "firstname": "ทดสอบ",
+                "lastname": "ลืมรหัส",
+                "tel": "999",
+                "email": "rmutpcpe123@gmail.com",
+                "level": "นักเรียน",
+                "room_student": "ม.6/2",
+                "username": "plakk",
+                "latitude": 13.8352587,
+                "longitude": 100.49971,
+                "devicetoken": "fhsVJ5utJfY:APA91bExZr7ZmvVeXYKOIfgFpvMS1hivH3hcelYKE2tzuy9R1SnDtQ34PvgNNm_lS42UdBw6ppZ9zFJfnoKZMvbz_er78G9kU5MVBdUpLQfCne6Mlkb8dc-VM0IxP9-dFVw4a7SOJG49",
+                "news_id": [],
+                "favorite_news_id": [],
+                "user_id": 16,
+                "active": true,
+                "userrole": 4,
+                "fullname": "คุณทดสอบ ลืมรหัส",
+                "_id": "peEidash6TywSKDFS"
+            }
         },
         //##############################################################################
         //สิทธิ์ user
