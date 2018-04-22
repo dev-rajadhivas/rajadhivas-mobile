@@ -17,7 +17,7 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     // รายการเว็บบอร์ด
     function findBoard() {
     	var query = new Object();
-        query.room_id = variable.getSession().room_id ? variable.getSession().room_id : 1;
+        query.room_id = variable.getSession().room_id ? variable.getSession().room_id : null;
         query.active_permission = variable.getSession().room_id ? true : false;
         RestAPI.Boardlists(query).success(function(results, status, headers, config) {
             if (results.status === true) {

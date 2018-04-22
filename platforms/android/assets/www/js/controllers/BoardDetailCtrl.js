@@ -4,6 +4,7 @@ app.controller('BoardDetailCtrl', function($rootScope, $scope, $ionicPlatform, $
     // ทำเมื่อหน้าพร้อมใช้งาน
     $ionicPlatform.ready(function() {
         $scope.loadingShow = false;
+        $scope.text = new Object();
         findBoard();
     });
 
@@ -43,12 +44,13 @@ app.controller('BoardDetailCtrl', function($rootScope, $scope, $ionicPlatform, $
         $rootScope.$broadcast('loading:show');
         var comment = new Object();
         comment.content_id = parseInt($stateParams.board_id);
-        comment.content_detail = val;
+        comment.content_detail = val.comment;
         comment.create_by = variable.getSession().user_id;
         comment.create_by_name = variable.getSession().firstname + " " + variable.getSession().lastname;
         RestAPI.BoardcreateComments(comment).success(function(results, status, headers, config) {
             if (results.status === true) {
             	var content_id = { content_id: $stateParams.board_id };
+                $scope.text = new Object();
             	$rootScope.$broadcast('loading:hide');
                 findBoard();
             } else {
