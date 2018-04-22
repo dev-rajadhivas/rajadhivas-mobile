@@ -21,6 +21,12 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
         // $ionicSlideBoxDelegate.$getByHandle("modalhandle").slide(0);
         $scope.loadingShow = false;
         $scope.MaxWidth = window.screen.width;
+        $scope.feed1 = [];
+        $scope.feed2 = [];
+        $scope.feed3 = [];
+        $scope.date1 = null;
+        $scope.date2 = null;
+        $scope.date3 = null;
     });
 
     // #############################################################################
@@ -38,9 +44,61 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
     // #############################################################################
     // Date Picker
     $scope.datePicker = function() {
+        switch ($scope.slidefeed) {
+            case 0:
+                var d = $scope.date1 ? new Date($scope.date1) : new Date();
+                break;
+            case 1:
+                var d = $scope.date2 ? new Date($scope.date2) : new Date();
+                break;
+            case 2:
+                var d = $scope.date3 ? new Date($scope.date3) : new Date();
+                break;
+        }
         ionicDatePicker.openDatePicker({
-            inputDate: new Date()
+            inputDate: d,
+            callback: function(val) { //Mandatory
+                switch ($scope.slidefeed) {
+                    case 0:
+                        $scope.date1 = new Date(val);
+                        $scope.feedPage1 = ($filter('filter')($scope.feed1, function(item) {
+                            return new Date(item.create_date).getFullYear() === new Date(val).getFullYear() && (new Date(item.create_date).getMonth() + 1) === (new Date(val).getMonth() + 1) && new Date(item.create_date).getDate() === new Date(val).getDate();
+                        }, true));
+                        break;
+                    case 1:
+                        $scope.date2 = new Date(val);
+                        $scope.feedPage2 = ($filter('filter')($scope.feed2, function(item) {
+                            return new Date(item.create_date).getFullYear() === new Date(val).getFullYear() && (new Date(item.create_date).getMonth() + 1) === (new Date(val).getMonth() + 1) && new Date(item.create_date).getDate() === new Date(val).getDate();
+                        }, true));
+                        break;
+                    case 2:
+                        $scope.date3 = new Date(val);
+                        $scope.feedPage3 = ($filter('filter')($scope.feed3, function(item) {
+                            return new Date(item.create_date).getFullYear() === new Date(val).getFullYear() && (new Date(item.create_date).getMonth() + 1) === (new Date(val).getMonth() + 1) && new Date(item.create_date).getDate() === new Date(val).getDate();
+                        }, true));
+                        break;
+                }
+            }
         });
+    };
+
+    // #############################################################################
+    // clear Date
+    $scope.clearDate = function() {
+        switch ($scope.slidefeed) {
+            case 0:
+                $scope.feedPage1 = $scope.feed1;
+                $scope.date1 = null;
+                break;
+            case 1:
+                $scope.feedPage2 = $scope.feed2;
+                $scope.date2 = null;
+                break;
+            case 2:
+                $scope.feedPage3 = $scope.feed3;
+                $scope.date3 = null;
+                break;
+        }
     };
 
     // #############################################################################
@@ -65,6 +123,9 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
             $scope.hotnews = ($filter('filter')(data, function(item) {
                 return item.hotnews === true;
             }, true));
+            $scope.feed1 = $scope.feedPage1;
+            $scope.feed2 = $scope.feedPage2;
+            $scope.feed3 = $scope.feedPage3;
             if (variable.getSession() && $scope.hotnews.length > 0) {
                 $timeout(function() {
                     modalHotnews();

@@ -3,7 +3,7 @@ app.controller('BoardDetailCtrl', function($rootScope, $scope, $ionicPlatform, $
     // #############################################################################
     // ทำเมื่อหน้าพร้อมใช้งาน
     $ionicPlatform.ready(function() {
-        console.log($stateParams.board_id)
+        $scope.loadingShow = false;
         findBoard();
     });
 
@@ -29,6 +29,7 @@ app.controller('BoardDetailCtrl', function($rootScope, $scope, $ionicPlatform, $
         RestAPI.BoardComments(content_id).success(function(results, status, headers, config) {
             if (results.status === true) {
                 $scope.board_comment = results.data;
+                $scope.loadingShow = true;
             }
         }, function(error) {
             Fn.AlertPopup("", "การข้อผิดพลาดจากระบบ");

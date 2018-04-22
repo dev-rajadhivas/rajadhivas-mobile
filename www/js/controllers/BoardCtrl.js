@@ -1,4 +1,4 @@
-app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI, Fn, $location) {
+app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI, Fn, $location, variable, $filter) {
 
     // #############################################################################
     // ทำเมื่อเข้าหน้าทุกครั้ง
@@ -10,6 +10,7 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     // ทำเมื่อหน้าพร้อมใช้งาน
     $ionicPlatform.ready(function() {
         $scope.listBoard = [];
+        $scope.loadingShow = false;
     });
 
     // #############################################################################
@@ -17,7 +18,16 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     function findBoard() {
         RestAPI.Boardlists().success(function(results, status, headers, config) {
             if (results.status === true) {
-                $scope.listBoard = results.data;
+                // $scope.listBoard = results.data;
+                var active_permission = true;
+                if (!variable.getSession().room_id) {
+                    active_permission = false;
+                }
+                $scope.listBoard = ($filter('filter')(results.data, function(item) {
+                    return item.room_id === variable.getSession().room_id && item.active_permission === active_permission;
+                }, true));
+                console.log(variable.getSession())
+                $scope.loadingShow = true;
             }
         }, function(error) {
             Fn.AlertPopup("", "การข้อผิดพลาดจากระบบ");

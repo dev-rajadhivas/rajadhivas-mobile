@@ -5,8 +5,9 @@
         </span>
     </ion-nav-buttons>
     <ion-content>
-        <div class="list">
-            <div class="item item-icon-right" ng-repeat="(key, value) in listBoard" ng-click="gotoBoard(value)">
+        <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
+        <div class="list" ng-if="loadingShow">
+            <div class="item item-icon-right" ng-if="listBoard.length > 0" ng-repeat="(key, value) in listBoard" ng-click="gotoBoard(value)">
                 <span style="font-size: 22px;font-weight: bold;">{{value.content_title}}</span>
                 <i class="icon ion-ios-arrow-right"></i>
                 <p style="font-size: 20px;">
@@ -14,6 +15,11 @@
                     <span> ตอบ {{value.content_answer}}</span>
                 </p>
                 <p style="font-size: 20px;text-align: right;">{{ value.create_date | covertotimeThai }}</p>
+            </div>
+            <div class="card" ng-if="listBoard.length === 0">
+                <div class="item item-text-wrap">
+                    <span class="title-accident">ไม่พบกระดานสนทนา</span>
+                </div>
             </div>
         </div>
     </ion-content>

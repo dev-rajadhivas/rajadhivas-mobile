@@ -31,10 +31,18 @@
         <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
         <div style="height: 35%;" ng-if="loadingShow">
             <ion-slide-box ng-if="slidefeed === 0" show-pager="false" does-continue="true" auto-play="true">
-                <ion-slide ng-repeat="value in feedPage1">
+                <ion-slide ng-if="feedPage1.length > 0" ng-repeat="value in feedPage1">
                     <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
                     <div class="slidenews">
                         <p class="topic-feed">{{value.title}} </p>
+                    </div>
+                </ion-slide>
+                <ion-slide ng-if="feedPage1.length === 0">
+                    <div class="box-takepicture" style="height: 210px;">
+                        <div>
+                            <i class="icon icon-file-empty"></i>
+                            <p>ไม่มีข่าว</p>
+                        </div>
                     </div>
                 </ion-slide>
             </ion-slide-box>
@@ -62,8 +70,8 @@
                     	<i class="icon ion-ios-search placeholder-icon"></i>
                         <input type="search" ng-model="searchPage1" placeholder="ค้นหา">
                     </label>
-                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
                     <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
@@ -92,8 +100,8 @@
                     	<i class="icon ion-ios-search placeholder-icon"></i>
                         <input type="search" ng-model="searchPage2" placeholder="ค้นหา">
                     </label>
-                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
                     <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
@@ -122,8 +130,8 @@
                     	<i class="icon ion-ios-search placeholder-icon"></i>
                         <input type="search" ng-model="searchPage3" placeholder="ค้นหา">
                     </label>
-                    <!-- <a class="button button-small button-icon icon ion-ios-calendar-outline" ng-click="datePicker()"></a> -->
                     <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">

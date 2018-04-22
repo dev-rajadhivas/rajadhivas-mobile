@@ -31,23 +31,23 @@ app.factory('variable', function($filter, $window) {
         getSession: function() {
             return $window.localStorage["session"] ? JSON.parse($window.localStorage["session"]) : '';
             // return {
-            //     "firstname": "ทดสอบ",
-            //     "lastname": "ลืมรหัส",
-            //     "tel": "999",
-            //     "email": "rmutpcpe123@gmail.com",
-            //     "level": "นักเรียน",
-            //     "room_student": "ม.6/2",
-            //     "username": "plakk",
-            //     "latitude": 13.8352587,
-            //     "longitude": 100.49971,
-            //     "devicetoken": "fhsVJ5utJfY:APA91bExZr7ZmvVeXYKOIfgFpvMS1hivH3hcelYKE2tzuy9R1SnDtQ34PvgNNm_lS42UdBw6ppZ9zFJfnoKZMvbz_er78G9kU5MVBdUpLQfCne6Mlkb8dc-VM0IxP9-dFVw4a7SOJG49",
+            //     "firstname": "อิอิ",
+            //     "lastname": "ยยย",
+            //     "tel": "316194",
+            //     "email": "ufj@mail.com",
+            //     "level": "อาจารย์",
+            //     "username": "plak2",
+            //     "latitude": 13.7649203,
+            //     "longitude": 100.5023906,
+            //     "devicetoken": "dS8KBAjLCb8:APA91bFih5-nXmvQZmECNayYDdf8GEWr3sQb8J0jLwv65y5ZpI5qM-o05F25pGGUsG8mxmBz03tGpzZYcLP2buE7PxnbzFfGm2R5sNMB4nirKAReShWSidmv9OX4n-T40rbgAhvc7Glx",
+            //     "room_student": null,
+            //     "room_id": null,
             //     "news_id": [],
             //     "favorite_news_id": [],
-            //     "user_id": 16,
+            //     "user_id": 17,
             //     "active": true,
-            //     "userrole": 4,
-            //     "fullname": "คุณทดสอบ ลืมรหัส",
-            //     "_id": "peEidash6TywSKDFS"
+            //     "userrole": 2,
+            //     "fullname": "คุณอิอิ ยยย"
             // }
         },
         //##############################################################################

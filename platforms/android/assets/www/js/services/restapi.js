@@ -131,6 +131,46 @@ app.factory('RestAPI', function($http, $rootScope) {
                     'Content-Type': headers
                 }
             });
+        },
+        Boardreads: function(data) {
+            return $http({
+                method: 'POST',
+                url: server + '/Boardread',
+                headers: {
+                    'Content-Type': headers
+                },
+                data: data
+            });
+        },
+        BoardOnelists: function(data) {
+            return $http({
+                method: 'POST',
+                url: server + '/BoardOnelist',
+                headers: {
+                    'Content-Type': headers
+                },
+                data: data
+            });
+        },
+        BoardComments: function(data) {
+            return $http({
+                method: 'POST',
+                url: server + '/BoardComment',
+                headers: {
+                    'Content-Type': headers
+                },
+                data: data
+            });
+        },
+        BoardcreateComments: function(data) {
+            return $http({
+                method: 'POST',
+                url: server + '/BoardcreateComment',
+                headers: {
+                    'Content-Type': headers
+                },
+                data: data
+            });
         }
     };
 });

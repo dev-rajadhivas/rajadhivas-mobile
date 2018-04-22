@@ -1,28 +1,27 @@
 <ion-view view-title="กระดานสนทนา" can-swipe-back="false" class="bg-img-blur">
     <ion-content delegate-handle="boardScroll">
-        <div class="list">
-            <div class="list">
-                <div class="item item-body">
-                    <h2 style="font-size: 25px;margin-top: 0px;font-weight: bold;">{{dataBoard.content_title}}</h2>
-                    <p class="board-content" ng-bind-html="dataBoard.content_detail"></p>
-                    <h2 style="font-size: 20px;text-align: right;">ผู้สร้าง <b>{{dataBoard.create_by_name}} {{dataBoard.create_date | covertotimeThai}}</b></h2>
-                </div>
-                <div class="item">
-                    <p style="font-size: 20px;" ng-click="event.comments.drop = !event.comments.drop;scrollResize(boardScroll)">
-                        <a class="subdued">{{dataBoard.content_answer}} ความเห็น</a>
-                    </p>
-                </div>
-                <div ng-if="event.comments.drop">
-                    <div class="item item-text-wrap" ng-repeat="(key, value) in board_comment">
-                        <p style="font-size: 20px;font-weight: bold;">{{value.create_by_name}}</p>
-                        <span class="board-comment" ng-bind-html="value.content_detail"></span>
-                        <p style="font-size: 20px;text-align: right;">{{value.create_date | covertotimeThai}}</p>
-                    </div>
+        <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
+        <div class="list" ng-if="loadingShow">
+            <div class="item item-body">
+                <h2 style="font-size: 25px;margin-top: 0px;font-weight: bold;">{{dataBoard.content_title}}</h2>
+                <p class="board-content" ng-bind-html="dataBoard.content_detail"></p>
+                <h2 style="font-size: 20px;text-align: right;">ผู้สร้าง <b>{{dataBoard.create_by_name}} {{dataBoard.create_date | covertotimeThai}}</b></h2>
+            </div>
+            <div class="item">
+                <p style="font-size: 20px;" ng-click="event.comments.drop = !event.comments.drop;scrollResize(boardScroll)">
+                    <a class="subdued">{{dataBoard.content_answer}} ความเห็น</a>
+                </p>
+            </div>
+            <div ng-if="event.comments.drop">
+                <div class="item item-text-wrap" ng-repeat="(key, value) in board_comment">
+                    <p style="font-size: 20px;font-weight: bold;">{{value.create_by_name}}</p>
+                    <span class="board-comment" ng-bind-html="value.content_detail"></span>
+                    <p style="font-size: 20px;text-align: right;">{{value.create_date | covertotimeThai}}</p>
                 </div>
             </div>
         </div>
     </ion-content>
-    <ion-footer-bar>
+    <ion-footer-bar ng-if="loadingShow">
         <div class="row" style="padding: 0px;">
             <div class="col col-90" style="padding: 0px;">
                 <label class="item item-input" style="padding: 0px;">

@@ -10,7 +10,7 @@ app.config(function(ionicDatePickerProvider) {
         inputDate: toDay,
         titleLabel: 'ปฏิทิน',
         todayLabel: "วันนี้",
-        setLabel: null,
+        setLabel: "เลือก",
         closeLabel: "ปิด",
         mondayFirst: false,
         weeksList: weeksTh,
