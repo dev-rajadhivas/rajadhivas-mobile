@@ -29,6 +29,7 @@ app.controller('BoardDetailCtrl', function($rootScope, $scope, $ionicPlatform, $
         RestAPI.BoardComments(content_id).success(function(results, status, headers, config) {
             if (results.status === true) {
                 $scope.board_comment = results.data;
+                console.log($scope.board_comment)
                 $scope.loadingShow = true;
             }
         }, function(error) {

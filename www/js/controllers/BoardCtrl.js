@@ -3,6 +3,7 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     // #############################################################################
     // ทำเมื่อเข้าหน้าทุกครั้ง
     $scope.$on('$ionicView.beforeEnter', function(e, config) {
+        $scope.loadingShow = false;
         findBoard();
     });
 
@@ -10,23 +11,21 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     // ทำเมื่อหน้าพร้อมใช้งาน
     $ionicPlatform.ready(function() {
         $scope.listBoard = [];
-        $scope.loadingShow = false;
     });
 
     // #############################################################################
     // รายการเว็บบอร์ด
     function findBoard() {
-        RestAPI.Boardlists().success(function(results, status, headers, config) {
+    	var query = new Object();
+        query.room_id = variable.getSession().room_id ? variable.getSession().room_id : 1;
+        query.active_permission = variable.getSession().room_id ? true : false;
+        RestAPI.Boardlists(query).success(function(results, status, headers, config) {
             if (results.status === true) {
-                // $scope.listBoard = results.data;
-                var active_permission = true;
-                if (!variable.getSession().room_id) {
-                    active_permission = false;
-                }
-                $scope.listBoard = ($filter('filter')(results.data, function(item) {
-                    return item.room_id === variable.getSession().room_id && item.active_permission === active_permission;
-                }, true));
-                console.log(variable.getSession())
+                $scope.listBoard = results.data;
+                // $scope.listBoard = ($filter('filter')(results.data, function(item) {
+                //     return item.room_id === variable.getSession().room_id && item.active_permission === active_permission;
+                // }, true));
+                console.log($scope.listBoard, variable.getSession())
                 $scope.loadingShow = true;
             }
         }, function(error) {

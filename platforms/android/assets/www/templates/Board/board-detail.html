@@ -12,11 +12,16 @@
                     <a class="subdued">{{dataBoard.content_answer}} ความเห็น</a>
                 </p>
             </div>
-            <div ng-if="event.comments.drop">
+            <div ng-if="!event.comments.drop">
                 <div class="item item-text-wrap" ng-repeat="(key, value) in board_comment">
                     <p style="font-size: 20px;font-weight: bold;">{{value.create_by_name}}</p>
-                    <span class="board-comment" ng-bind-html="value.content_detail"></span>
-                    <p style="font-size: 20px;text-align: right;">{{value.create_date | covertotimeThai}}</p>
+                    <div ng-if="!value.delete_status">
+                        <span class="board-comment" ng-bind-html="value.content_detail"></span>
+                        <p style="font-size: 20px;text-align: right;">{{value.create_date | covertotimeThai}}</p>
+                    </div>
+                    <div ng-if="value.delete_status === true">
+                        <span style="color: red;font-size: 20px;">ข้อความถูกลบออก เมื่อ {{value.delete_date | covertotimeThai}}</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -123,13 +123,14 @@ app.factory('RestAPI', function($http, $rootScope) {
                 data: data
             });
         },
-        Boardlists: function() {
+        Boardlists: function(data) {
             return $http({
-                method: 'GET',
+                method: 'POST',
                 url: server + '/BoardList',
                 headers: {
                     'Content-Type': headers
-                }
+                },
+                data: data
             });
         },
         Boardreads: function(data) {
