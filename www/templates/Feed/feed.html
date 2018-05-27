@@ -29,24 +29,21 @@
     </ion-header-bar>
     <ion-content scroll="false">
         <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
-        <div style="height: 35%;" ng-if="loadingShow">
-            <ion-slide-box ng-if="slidefeed === 0" show-pager="false" does-continue="true" auto-play="true">
-                <ion-slide ng-if="feedPage1.length > 0" ng-repeat="value in feedPage1">
+        <div ng-if="loadingShow" ng-class="{'ads-height': slidefeed === 0}" style="position: relative;">
+            <ion-slide-box ng-if="slidefeed === 0" show-pager="false" does-continue="false" auto-play="false" on-slide-changed="slideHasChanged($index)" delegate-handle="imgSlide">
+                <ion-slide ng-repeat="value in imgPage">
                     <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
-                    <div class="slidenews">
-                        <p class="topic-feed">{{value.title}} </p>
-                    </div>
-                </ion-slide>
-                <ion-slide ng-if="feedPage1.length === 0">
-                    <div class="box-takepicture" style="height: 210px;">
-                        <div>
-                            <i class="icon icon-file-empty"></i>
-                            <p>ไม่มีข่าว</p>
-                        </div>
+                    <div class="slidenews" ng-click="readNews(value._id, value.news_id);">
+                        <p class="topic-feed">{{value.title}}</p>
                     </div>
                 </ion-slide>
             </ion-slide-box>
-            <ion-slide-box ng-if="slidefeed === 1" show-pager="false" does-continue="true" auto-play="true">
+            <i class="ion-arrow-left-b icon-slidepage" style="font-size:45px;bottom: 50%;left: 10px;" ng-click="clickImgSlideLeft()"></i>
+            <i class="ion-arrow-right-b icon-slidepage" style="font-size:45px;bottom: 50%;right: 10px;" ng-click="clickImgSlideRight()"></i>
+            <i class="ion-record icon-slidepage" style="bottom: 45px;left: 40%;" ng-class="{'activeIconImg': imgSlide === 0}" ng-click="choosePage(0)"></i>
+            <i class="ion-record icon-slidepage" style="bottom: 45px;left: 50%;" ng-class="{'activeIconImg': imgSlide === 1}" ng-click="choosePage(1)"></i>
+            <i class="ion-record icon-slidepage" style="bottom: 45px;left: 60%;" ng-class="{'activeIconImg': imgSlide === 2}" ng-click="choosePage(2)"></i>
+            <!-- <ion-slide-box ng-if="slidefeed === 1" show-pager="false" does-continue="true" auto-play="true">
                 <ion-slide ng-repeat="value in feedPage2">
                     <img ng-src="{{server_url}}{{value.path}}" class="slide-news" style="max-width: {{MaxWidth}}px">
                     <div class="slidenews">
@@ -61,24 +58,24 @@
                         <p class="topic-feed">{{value.title}} </p>
                     </div>
                 </ion-slide>
-            </ion-slide-box>
+            </ion-slide-box> -->
         </div>
-        <ion-slide-box delegate-handle="modalhandle" on-slide-changed="slide($index);" show-pager="false" style="height: 65%" ng-if="loadingShow">
+        <ion-slide-box delegate-handle="mainSilde" on-slide-changed="slide($index);" show-pager="true" style="height: 100%" ng-if="loadingShow" ng-class="{'content-height': slidefeed === 0}">
             <ion-slide>
-                <div class="item item-input-inset">
+                <div class="item item-input-inset" ng-click="openModal('modal-searchfeed')">
                     <label class="item-input-wrapper">
-                    	<i class="icon ion-ios-search placeholder-icon"></i>
-                        <input type="search" ng-model="searchPage1" placeholder="ค้นหา">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage1.text" placeholder="ค้นหา" disabled="true">
                     </label>
-                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
-                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar.png" style="width: 32px;left: 6px;position: relative;" ng-if="date1 === null">
+                    <img src="img/feed/calendar_select.png" style="width: 32px;left: 6px;position: relative;" ng-if="date1 !== null">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
                     </ion-refresher>
                     <div ng-if="feedPage1.length > 0">
                         <div class="list fix-tag-list-html">
-                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage1 | filterBy: ['title','content']: searchPage1" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage1 | filterBy: ['title','content']: searchPage1.text | orderBy:'-create_date'" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
                                 <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
                                 <h2>{{value.title}}</h2>
                                 <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
@@ -95,20 +92,20 @@
                 </ion-scroll>
             </ion-slide>
             <ion-slide>
-                <div class="item item-input-inset">
+                <div class="item item-input-inset" ng-click="openModal('modal-searchfeed')">
                     <label class="item-input-wrapper">
-                    	<i class="icon ion-ios-search placeholder-icon"></i>
-                        <input type="search" ng-model="searchPage2" placeholder="ค้นหา">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage2.text" placeholder="ค้นหา" disabled="true">
                     </label>
-                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
-                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar.png" style="width: 32px;left: 6px;position: relative;" ng-if="date2 === null">
+                    <img src="img/feed/calendar_select.png" style="width: 32px;left: 6px;position: relative;" ng-if="date2 !== null">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
                     </ion-refresher>
                     <div ng-if="feedPage2.length > 0">
                         <div class="list fix-tag-list-html">
-                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage2 | filterBy: ['title','content']: searchPage2" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage2 | filterBy: ['title','content']: searchPage2.text | orderBy:'-create_date'" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
                                 <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
                                 <h2>{{value.title}}</h2>
                                 <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
@@ -125,20 +122,20 @@
                 </ion-scroll>
             </ion-slide>
             <ion-slide>
-                <div class="item item-input-inset">
+                <div class="item item-input-inset" ng-click="openModal('modal-searchfeed')">
                     <label class="item-input-wrapper">
-                    	<i class="icon ion-ios-search placeholder-icon"></i>
-                        <input type="search" ng-model="searchPage3" placeholder="ค้นหา">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input type="search" ng-model="searchPage3.text" placeholder="ค้นหา">
                     </label>
-                    <img src="img/feed/calendar.png" ng-click="datePicker()" style="width: 32px;left: 6px;position: relative;">
-                    <img src="img/feed/calendar_clear.png" ng-click="clearDate()" style="width: 32px;left: 6px;position: relative;">
+                    <img src="img/feed/calendar.png" style="width: 32px;left: 6px;position: relative;" ng-if="date3 === null">
+                    <img src="img/feed/calendar_select.png" style="width: 32px;left: 6px;position: relative;" ng-if="date3 !== null">
                 </div>
                 <ion-scroll class="scroll">
                     <ion-refresher pulling-text="ดึงลงเพื่อโหลดใหม่" on-refresh="doRefrsesh()" pulling-icon="ion-android-arrow-down light" spinner="bubbles" class="refresher-job">
                     </ion-refresher>
                     <div ng-if="feedPage3.length > 0">
                         <div class="list fix-tag-list-html">
-                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage3 | filterBy: ['title','content']: searchPage3" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
+                            <div class="item item-thumbnail-left" ng-repeat="value in feedPage3 | filterBy: ['title','content']: searchPage3.text | orderBy:'-create_date'" ng-click="readNews(value._id, value.news_id);" style="height: 100px;">
                                 <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
                                 <h2>{{value.title}}</h2>
                                 <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
@@ -157,6 +154,36 @@
         </ion-slide-box>
     </ion-content>
     <style type="text/css">
+    .activeIconImg {
+        color: #ef3a9e !important;
+    }
+
+    .icon-slidepage {
+        font-size: 28px;
+        position: absolute;
+        color: #7ed4ec;
+        text-shadow: 1px 1px 2px black, 0 0 25px #b4b4ff, 0 0 5px #ffffff;
+    }
+
+    .icon-slidepage {
+        font-size: 28px;
+        position: absolute;
+        color: #7ed4ec;
+        text-shadow: 1px 1px 2px black, 0 0 25px #b4b4ff, 0 0 5px #ffffff;
+    }
+
+    .slider-pager {
+        display: none;
+    }
+
+    .content-height {
+        height: 65% !important;
+    }
+
+    .ads-height {
+        height: 35%;
+    }
+
     .topic-feed {
         overflow: hidden;
         text-overflow: ellipsis;

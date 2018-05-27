@@ -27,6 +27,11 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
         $scope.date1 = null;
         $scope.date2 = null;
         $scope.date3 = null;
+        $scope.searchPage1 = {};
+        $scope.searchPage2 = {};
+        $scope.searchPage3 = {};
+        $scope.imgPage = [];
+        $scope.imgSlide = 0;
     });
 
     // #############################################################################
@@ -83,25 +88,6 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
     };
 
     // #############################################################################
-    // clear Date
-    $scope.clearDate = function() {
-        switch ($scope.slidefeed) {
-            case 0:
-                $scope.feedPage1 = $scope.feed1;
-                $scope.date1 = null;
-                break;
-            case 1:
-                $scope.feedPage2 = $scope.feed2;
-                $scope.date2 = null;
-                break;
-            case 2:
-                $scope.feedPage3 = $scope.feed3;
-                $scope.date3 = null;
-                break;
-        }
-    };
-
-    // #############################################################################
     // ดึงข่าว
     function getNews() {
         var data = variable.getNews();
@@ -126,6 +112,9 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
             $scope.feed1 = $scope.feedPage1;
             $scope.feed2 = $scope.feedPage2;
             $scope.feed3 = $scope.feedPage3;
+            $scope.imgPage.push($scope.feedPage1[0]);
+            $scope.imgPage.push($scope.feedPage2[0]);
+            $scope.imgPage.push($scope.feedPage3[0]);
             if (variable.getSession() && $scope.hotnews.length > 0) {
                 $timeout(function() {
                     modalHotnews();
@@ -150,6 +139,58 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
         }
     }
 
+    // #############################################################################
+    // modal
+    $scope.openModal = function(modalName) {
+        var id = "templates/modal/" + modalName + ".html";
+        $ionicModal.fromTemplateUrl(id, {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal) {
+            $scope.modal = modal;
+            $scope.modal.show();
+        });
+    };
+
+    // #############################################################################
+    // input Search
+    $scope.inputSearch = function(page, text) {
+        switch (page) {
+            case 1:
+                $scope.searchPage1.text = text;
+                break;
+            case 2:
+                $scope.searchPage2.text = text;
+                break;
+            case 3:
+                $scope.searchPage3.text = text;
+                break;
+        }
+    };
+
+    // #############################################################################
+    // clear input Search
+    $scope.clearInputSearch = function(page) {
+        switch (page) {
+            case 1:
+                $scope.searchPage1 = {};
+                $scope.feedPage1 = $scope.feed1;
+                $scope.date1 = null;
+                break;
+            case 2:
+                $scope.searchPage2 = {};
+                $scope.feedPage2 = $scope.feed2;
+                $scope.date2 = null;
+                break;
+            case 3:
+                $scope.searchPage3 = {};
+                $scope.feedPage3 = $scope.feed3;
+                $scope.date3 = null;
+                break;
+        }
+        $scope.click(0);
+        $scope.modal.hide();
+    };
     // #############################################################################
     // เก็บข่าวที่อ่านแล้วเข้า mongo collection user
     function collectReadNewss(news_id) {
@@ -186,6 +227,9 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
     // ดึงจอ รีเฟรชงาน
     $scope.doRefrsesh = function() {
         // $scope.loadingADS = true;
+        $scope.date1 = null;
+        $scope.date2 = null;
+        $scope.date3 = null;
         $rootScope.$broadcast('news:update');
         getNews();
         $rootScope.$broadcast('newsUnRead:update', { event: variable.getSession() });
@@ -193,10 +237,61 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
     };
 
     // #############################################################################
+    // slide imgage
+    $scope.slideHasChanged = function(index) {
+        $scope.imgSlide = index;
+    };
+
+    // #############################################################################
+    // คลิกเปลี่ยนรูป ปุ่มซ้าย
+    $scope.clickImgSlideLeft = function() {
+        switch ($scope.imgSlide) {
+            case 0:
+                $scope.imgSlide = 0;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(0);
+                break;
+            case 1:
+                $scope.imgSlide = 0;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(0);
+                break;
+            case 2:
+                $scope.imgSlide = 1;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(1);
+                break;
+        }
+    };
+
+    // #############################################################################
+    // ปุ่มเกลมปลี่ยนรูป
+    $scope.choosePage = function(index) {
+        $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(index);
+    };
+
+    // #############################################################################
+    // คลิกเปลี่ยนรูป ปุ่มขวา
+    $scope.clickImgSlideRight = function() {
+        switch ($scope.imgSlide) {
+            case 0:
+                $scope.imgSlide = 1;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(1);
+                break;
+            case 1:
+                $scope.imgSlide = 2;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(2);
+                break;
+            case 2:
+                $scope.imgSlide = 2;
+                $ionicSlideBoxDelegate.$getByHandle("imgSlide").slide(2);
+                break;
+        }
+    };
+
+    // #############################################################################
     // คลิกเปลี่ยนแท็บ
     $scope.click = function(index) {
         $scope.slidefeed = index;
-        $ionicSlideBoxDelegate.slide(index);
+        $ionicSlideBoxDelegate.$getByHandle("mainSilde").slide(index);
+        $scope.imgSlide = 0;
         switch (index) {
             case 0:
                 $scope.titile = "ประชาสัมพันธ์";
@@ -214,6 +309,7 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
     // สไลค์เปลี่ยนแท็บ
     $scope.slide = function(index) {
         $scope.slidefeed = index;
+        $scope.imgSlide = 0;
         switch (index) {
             case 0:
                 $scope.titile = "ประชาสัมพันธ์";

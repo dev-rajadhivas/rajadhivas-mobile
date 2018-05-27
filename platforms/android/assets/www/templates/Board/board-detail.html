@@ -4,7 +4,7 @@
         <div class="list" ng-if="loadingShow">
             <div class="item item-body">
                 <h2 style="font-size: 25px;margin-top: 0px;font-weight: bold;">{{dataBoard.content_title}}</h2>
-                <p class="board-content" ng-bind-html="dataBoard.content_detail"></p>
+                <p class="board-content" ng-bind-html="dataBoard.content_detail" style="font-size: 20px;"></p>
                 <h2 style="font-size: 20px;text-align: right;">ผู้สร้าง <b>{{dataBoard.create_by_name}} {{dataBoard.create_date | covertotimeThai}}</b></h2>
             </div>
             <div class="item">
@@ -16,7 +16,7 @@
                 <div class="item item-text-wrap" ng-repeat="(key, value) in board_comment">
                     <p style="font-size: 20px;font-weight: bold;">{{value.create_by_name}}</p>
                     <div ng-if="!value.delete_status">
-                        <span class="board-comment" ng-bind-html="value.content_detail"></span>
+                        <span class="board-comment" ng-bind-html="value.content_detail" style="font-size: 20px;"></span>
                         <p style="font-size: 20px;text-align: right;">{{value.create_date | covertotimeThai}}</p>
                     </div>
                     <div ng-if="value.delete_status === true">

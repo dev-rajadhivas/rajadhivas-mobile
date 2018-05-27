@@ -40,7 +40,7 @@
                     ประเภทผู้ใช้ <span ng-show="!register.level" class="input-errorrequired"> *</span>
                 </div>
                 <select ng-model="register.level" style="font-size: 20px;">
-                    <option>อาจารย์</option>
+                    <option>ครู</option>
                     <option>นักเรียน</option>
                     <option>ผู้ปกครอง</option>
                     <option>บุคคลทั่วไป</option>
@@ -51,7 +51,7 @@
                     ระดับชั้น <span ng-show="!register.room_student" class="input-errorrequired"> *</span>
                 </div>
                 <select ng-model="register.room_student" style="font-size: 20px;">
-                    <option ng-repeat="(key, value) in room">{{value.class}}</option>
+                    <option ng-repeat="(key, value) in room | orderBy:'class'">{{value.class}}</option>
                 </select>
             </label>
             <label class="item item-input item-stacked-label">

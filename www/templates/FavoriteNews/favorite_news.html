@@ -7,7 +7,7 @@
     <ion-content>
         <div class="list fix-tag-list-html">
             <div ng-if="favoriteNews.length > 0">
-                <div class="item item-thumbnail-left" ng-repeat="value in favoriteNews" style="height: 100px;" ng-click="readNews(value._id, value.news_id);">
+                <div class="item item-thumbnail-left" ng-repeat="value in favoriteNews | orderBy:'-create_date'" style="height: 100px;" ng-click="readNews(value._id, value.news_id);">
                     <img ng-src="{{server_url}}{{value.path}}" style="object-fit: cover;z-index: 999;">
                     <h2>{{value.title}}</h2>
                     <div class="fix-tag-list-img" ng-bind-html="value.content"></div>
