@@ -147,8 +147,8 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
             scope: $scope,
             animation: 'slide-in-up'
         }).then(function(modal) {
-            $scope.modal = modal;
-            $scope.modal.show();
+            $scope.modalSearch = modal;
+            $scope.modalSearch.show();
         });
     };
 
@@ -189,7 +189,7 @@ app.controller('FeedCtrl', function($ionicSideMenuDelegate, ionicDatePicker, $io
                 break;
         }
         $scope.click(0);
-        $scope.modal.hide();
+        $scope.modalSearch.hide();
     };
     // #############################################################################
     // เก็บข่าวที่อ่านแล้วเข้า mongo collection user
