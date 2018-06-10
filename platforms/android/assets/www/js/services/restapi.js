@@ -172,6 +172,16 @@ app.factory('RestAPI', function($http, $rootScope) {
                 },
                 data: data
             });
+        },
+        changeRoom: function(data) {
+            return $http({
+                method: 'POST',
+                url: server + '/changeRoom',
+                headers: {
+                    'Content-Type': headers
+                },
+                data: data
+            });
         }
     };
 });

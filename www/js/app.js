@@ -57,7 +57,6 @@ app.run(function($ionicPlatform, $ionicLoading, $rootScope, $location, $ionicScr
     };
 
     $rootScope.scrollResize = function(v) {
-        console.log(v)
         $ionicScrollDelegate.$getByHandle(v).resize();
     };
 

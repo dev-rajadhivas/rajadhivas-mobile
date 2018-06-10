@@ -7,7 +7,7 @@
     <ion-content>
         <ion-spinner ng-if="!loadingShow" class="loadding-content" icon="circles"></ion-spinner>
         <div class="list" ng-if="loadingShow">
-            <div class="item item-icon-right" ng-if="listBoard.length > 0" ng-repeat="(key, value) in listBoard" ng-click="gotoBoard(value)">
+            <div class="item item-icon-right" ng-if="listBoard.length > 0" ng-repeat="(key, value) in listBoard | orderBy:'-create_date'" ng-click="gotoBoard(value)">
                 <span style="font-size: 22px;font-weight: bold;">หัวข้อ: {{value.content_title}}</span>
                 <i class="icon ion-ios-arrow-right"></i>
                 <p style="font-size: 20px;">

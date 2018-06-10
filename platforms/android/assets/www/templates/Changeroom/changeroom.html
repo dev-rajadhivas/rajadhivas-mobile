@@ -1,0 +1,19 @@
+<ion-view view-title="แก้ไขห้องเรียน" can-swipe-back="false" class="bg-img-blur">
+    <ion-content>
+        <div class="list">
+        	<label class="item item-input item-select">
+                <div class="input-label" style="font-size: 22px;">แก้ไขระดับชั้น</div>
+                <select ng-model="student.room_student" style="font-size: 20px;">
+                    <option ng-repeat="(key, value) in room | orderBy:'class'">{{value.class}}</option>
+                </select>
+            </label>
+            <div class="row">
+                <div class="col col-100">
+                    <button class="button button-block button-positive" ng-click="changeRoom(student)" ng-disabled="!student.room_student">
+                        <span style="font-size: 22px;">ยืนยัน</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

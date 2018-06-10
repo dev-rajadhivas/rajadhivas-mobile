@@ -104,6 +104,16 @@ app.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $h
                 }
             }
         })
+        //################################## เปลี่ยนห้องเรียน ##################################
+        .state('app.changeroom', {
+            url: '/changeroom',
+            views: {
+                'menuContent': {
+                    templateUrl: 'templates/Changeroom/changeroom.html',
+                    controller: 'ChangeroomCtrl'
+                }
+            }
+        })
         //################################## ตั้งค่า ##################################
         .state('app.setting', {
             url: '/setting',

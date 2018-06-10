@@ -25,7 +25,7 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
                 // $scope.listBoard = ($filter('filter')(results.data, function(item) {
                 //     return item.room_id === variable.getSession().room_id && item.active_permission === active_permission;
                 // }, true));
-                console.log($scope.listBoard, variable.getSession())
+                // console.log($scope.listBoard, variable.getSession())
                 $scope.loadingShow = true;
             }
         }, function(error) {
@@ -37,7 +37,7 @@ app.controller('BoardCtrl', function($rootScope, $scope, $ionicPlatform, RestAPI
     // เก็บการอ่านและเแลี่ยนหน้า
     $scope.gotoBoard = function(data) {
         $rootScope.$broadcast('loading:show');
-        console.log(data);
+        // console.log(data);
         var _id = { _id: data._id };
         RestAPI.Boardreads(_id).success(function(results, status, headers, config) {
             if (results.status === true) {
